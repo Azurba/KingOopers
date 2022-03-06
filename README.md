@@ -1,1 +1,1 @@
-# Azurba
+# Elderly reminder app
