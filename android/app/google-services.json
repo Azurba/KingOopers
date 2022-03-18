@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "397477292491",
+    "firebase_url": "https://cs464-spring22-project-default-rtdb.firebaseio.com",
+    "project_id": "cs464-spring22-project",
+    "storage_bucket": "cs464-spring22-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:397477292491:android:e093df9100546164292e4e",
+        "android_client_info": {
+          "package_name": "com.PimentaGiudice.KingOopers.king_oopers_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "397477292491-2eqh4tmacbcdt7qtaonj723s497tu53d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnRlgarq7V4g-Slc9B_iFMwzHzUwc5MYA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "397477292491-2eqh4tmacbcdt7qtaonj723s497tu53d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
