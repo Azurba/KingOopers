@@ -51,7 +51,7 @@ class HomeTab extends StatelessWidget {
                     crossAxisSpacing: 1.0,
                     staggeredTiles: snapshot.data!.docs.map((doc) {
                       return StaggeredTile.count(
-                          doc.data()['x'], doc.data()['y']);
+                          doc.data()['x'], doc.data()['y'].toDouble());
                     }).toList(),
                     children: snapshot.data!.docs.map((docs) {
                       return FadeInImage.memoryNetwork(
