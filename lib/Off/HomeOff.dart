@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:king_oopers_app/Off/Dairy.dart';
 
+import '../main.dart';
+
 class HomeOff extends StatelessWidget {
   const HomeOff({Key? key}) : super(key: key);
 
@@ -10,33 +12,42 @@ class HomeOff extends StatelessWidget {
       //background
       decoration: const BoxDecoration(
           gradient: LinearGradient(
-              colors: [Colors.blue, Colors.white],
+              colors: [Colors.red, Colors.redAccent],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight)),
     );
 
     //ADD navigateTo to arguments
     // ignore: non_constant_identifier_names
-    Widget _HomeButtons(String text, color) => Padding(
+    Widget _HomeButtons(String text, navigateTo) => Padding(
       padding: const EdgeInsets.fromLTRB(1, 0, 1, 20),
       child: Container(
         width: 215,
         child: ElevatedButton(
             child: Text(
               text,
-              style: TextStyle(fontSize: 29.0, color: color),
+              style: TextStyle(fontSize: 29.0, color: Colors.black),
             ),
             onPressed: () {
               Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DairyState()));
+                  MaterialPageRoute(builder: (context) => navigateTo));
             },
             style: ElevatedButton.styleFrom(
-                primary: Color.fromRGBO(255, 255, 204, 1))),
+                primary: Colors.white)),
       ),
     );
 
     return Scaffold(
         appBar: AppBar(
+          leading: Builder(
+            builder: (BuildContext context){
+              return IconButton(onPressed: () {
+                Navigator.pop(context);
+              }, icon: const Icon(Icons.arrow_back),
+              color: Colors.black, iconSize: 20,
+              );
+            },
+          ),
           title: const Text(
             "King Oopers",
             style: TextStyle(color: Colors.black, fontSize: 35),
@@ -64,10 +75,10 @@ class HomeOff extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        _HomeButtons("Dairy", Colors.red),
-                        _HomeButtons("Meats", Colors.red),
-                        _HomeButtons("Cereals", Colors.red),
-                        _HomeButtons("Fruits", Colors.red),
+                        _HomeButtons("Dairy", DairyState()),
+                        _HomeButtons("Meats", null),
+                        _HomeButtons("Cereals", null),
+                        _HomeButtons("Fruits", null),
                       ],
                     ))
               ],

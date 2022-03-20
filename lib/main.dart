@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:king_oopers_app/Off/Dairy.dart';
-import 'package:king_oopers_app/Off/Dairy.dart';
 import 'package:king_oopers_app/Off/HomeOff.dart';
 
 void main() {
-  debugPaintSizeEnabled = false;
+  debugPaintSizeEnabled = true;
   runApp(const MaterialApp(
     title: "King Oopers",
     home: Home(),
@@ -35,7 +33,7 @@ class Home extends StatelessWidget {
           child: ElevatedButton(
             child: Text(
               text,
-              style: TextStyle(fontSize: 29.0, color: Colors.black),
+              style: const TextStyle(fontSize: 29.0, color: Colors.black),
               textAlign: TextAlign.center,
             ),
             onPressed: () {
@@ -75,7 +73,7 @@ class Home extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        _HomeButtons("Accessibility Off", HomeOff()),
+                        _HomeButtons("Accessibility Off", const HomeOff()),
                         _HomeButtons("Accessibility On", null),
                       ],
                     )),
