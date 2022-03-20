@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:king_oopers_app/Tabs/Dairy.dart';
+import 'package:king_oopers_app/Off/Dairy.dart';
+import 'package:king_oopers_app/Off/Dairy.dart';
+import 'package:king_oopers_app/Off/HomeOff.dart';
 
 void main() {
-  debugPaintSizeEnabled = true;
+  debugPaintSizeEnabled = false;
   runApp(const MaterialApp(
     title: "King Oopers",
     home: Home(),
@@ -19,36 +21,36 @@ class Home extends StatelessWidget {
           //background
           decoration: const BoxDecoration(
               gradient: LinearGradient(
-                  colors: [Colors.blue, Colors.white],
+                  colors: [Colors.greenAccent, Colors.green],
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight)),
         );
 
     //ADD navigateTo to arguments
     // ignore: non_constant_identifier_names
-    Widget _HomeButtons(String text, color) => Padding(
-          padding: const EdgeInsets.fromLTRB(1, 0, 1, 20),
-          child: Container(
-            width: 215,
-            child: ElevatedButton(
-                child: Text(
-                  text,
-                  style: TextStyle(fontSize: 29.0, color: color),
-                ),
-                onPressed: () {
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => DairyState()));
-                },
-                style: ElevatedButton.styleFrom(
-                    primary: Color.fromRGBO(255, 255, 204, 1))),
+    Widget _HomeButtons(String text, navigateTo) => Padding(
+        padding: const EdgeInsets.fromLTRB(1, 0, 1, 20),
+        child: Container(
+          width: 215,
+          child: ElevatedButton(
+            child: Text(
+              text,
+              style: TextStyle(fontSize: 29.0, color: Colors.black),
+              textAlign: TextAlign.center,
+            ),
+            onPressed: () {
+              Navigator.push(
+                  context, MaterialPageRoute(builder: (context) => navigateTo));
+            },
+            style: ElevatedButton.styleFrom(primary: Colors.white),
           ),
-        );
+        ));
 
     return Scaffold(
         appBar: AppBar(
           title: const Text(
-            "King Oopers",
-            style: TextStyle(color: Colors.black, fontSize: 35),
+            "CS 464 Project",
+            style: TextStyle(color: Colors.black, fontSize: 27),
           ),
           centerTitle: true,
           backgroundColor: Colors.white,
@@ -65,7 +67,7 @@ class Home extends StatelessWidget {
                       width: MediaQuery.of(context).size.width,
                       decoration: const BoxDecoration(
                         image: DecorationImage(
-                            image: AssetImage('assets/images/kingOopers.PNG')),
+                            image: AssetImage('assets/images/csu-logo.png')),
                       )),
                 ),
                 Padding(
@@ -73,12 +75,21 @@ class Home extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        _HomeButtons("Dairy", Colors.red),
-                        _HomeButtons("Meats", Colors.red),
-                        _HomeButtons("Cereals", Colors.red),
-                        _HomeButtons("Fruits", Colors.red),
+                        _HomeButtons("Accessibility Off", HomeOff()),
+                        _HomeButtons("Accessibility On", null),
                       ],
-                    ))
+                    )),
+                Padding(
+                    padding: const EdgeInsets.fromLTRB(0, 420, 0, 0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: const [
+                        Text("Student: Joao Pimenta Giudice"),
+                        Text(
+                            "CS464 - Introduction to Human-Computer Interaction "),
+                        Text("Spring 2022")
+                      ],
+                    )),
               ],
             )
           ],
