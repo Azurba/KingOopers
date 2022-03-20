@@ -74,6 +74,12 @@ flutter:
     - assets/images/milk.png
     - assets/images/kingOopers.PNG
     - assets/images/csu-logo.png
+    - assets/images/chedarCheese.PNG
+    - assets/images/ProvoloneCheese.PNG
+    - assets/images/sourCream.PNG
+    - assets/images/strawYogurt.PNG
+    - assets/images/blueYogurt.PNG
+    - assets/images/LacotoseFree.PNG
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
