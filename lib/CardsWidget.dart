@@ -2,62 +2,85 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 class CardsWidget extends StatelessWidget {
-
   @override
   Widget build(BuildContext context) {
     return CardsWidget();
   }
 }
 
-Widget cardsWidget(String image, String cardText) => Card(
-  clipBehavior: Clip.antiAlias,
-  shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(24),
-  ),
-  child: Column(
-    children: [
-      Stack(
+Widget buyButton() => SizedBox(
+    height: 38,
+    width: 260,
+    child: TextButton(
+      style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(Colors.blueAccent)),
+      onPressed: () {},
+      child: const Text(
+        'Add to Cart',
+        style: TextStyle(color: Colors.white, fontSize: 20),
+      ),
+    ));
+
+Widget quantityButton() => Container(
+      padding: EdgeInsets.all(3),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5), color: Colors.blueAccent),
+      child: Row(
         children: [
-          Ink.image(
-            image: AssetImage(image),
-            height: 240,
-            fit: BoxFit.cover,
-          ),
-          const Positioned(
-            bottom: 16,
-            right: 16,
-            left: 16,
-            child: Text(
-              'Cats rule the world!',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
+          InkWell(
+              onTap: () {},
+              child: const Icon(
+                Icons.remove,
                 color: Colors.white,
-                fontSize: 24,
-              ),
+                size: 25,
+              )),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 3),
+            padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 2),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(3), color: Colors.white),
+            child: const Text(
+              '1',
+              style: TextStyle(color: Colors.black, fontSize: 25),
             ),
           ),
+          InkWell(
+              onTap: () {},
+              child: const Icon(
+                Icons.add,
+                color: Colors.white,
+                size: 25,
+              )),
         ],
       ),
-      Padding(
-        padding: const EdgeInsets.all(16).copyWith(bottom: 0),
-        child: Text(
-          cardText,
-          style: const TextStyle(fontSize: 16),
-        ),
+    );
+
+Widget cardsWidget(String image, String cardText) => Card(
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(24),
       ),
-      ButtonBar(
-        alignment: MainAxisAlignment.start,
+      child: Column(
         children: [
-          TextButton(
-            child: Text('Buy Cat'),
-            onPressed: () {},
+          Stack(
+            children: [
+              Ink.image(
+                image: AssetImage(image),
+                height: 240,
+              ),
+            ],
           ),
-          TextButton(
-            child: Text('Buy Cat Food'),
-            onPressed: () {},
+          Padding(
+            padding: const EdgeInsets.all(16).copyWith(bottom: 0),
+            child: Text(
+              cardText,
+              style: const TextStyle(fontSize: 16),
+            ),
+          ),
+          ButtonBar(
+            alignment: MainAxisAlignment.start,
+            children: [buyButton(), quantityButton()],
           )
         ],
-      )
-    ],
-  ),
-);
+      ),
+    );

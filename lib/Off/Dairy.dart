@@ -27,19 +27,21 @@ class _Dairy extends State<DairyState> {
       appBar: AppBar(
         leading: Builder(builder: (BuildContext context) {
           return IconButton(
-              icon: Icon(Icons.arrow_back),
+              icon: const Icon(Icons.arrow_back),
               onPressed: () {
                 Navigator.pop(context);
               });
         }),
-        title: Text("Dairy"),
+        title: const Text("Dairy"),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
       body: ListView(
-        padding: EdgeInsets.all(16),
+        padding: const EdgeInsets.all(16),
         children: [
-          cardsWidget('assets/images/csu-logo.png', 'CSU Logo'),
+          cardsWidget('assets/images/milk.png', 'Milk'),
+          cardsWidget('assets/images/milk.png', 'Milk'),
+          cardsWidget('assets/images/milk.png', 'Milk'),
         ],
       ),
     );
