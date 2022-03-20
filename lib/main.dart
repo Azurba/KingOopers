@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:king_oopers_app/Tabs/Pages.dart';
 
 void main() {
   debugPaintSizeEnabled = false;
@@ -35,7 +36,7 @@ class Home extends StatelessWidget {
                   style: TextStyle(fontSize: 29.0, color: color),
                 ),
                 onPressed: () {
-                  //Navigator.push(context, MaterialPageRoute(builder: (context) => PlayerPanel()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Pages()));
                 },
                 style: ElevatedButton.styleFrom(
                     primary: Color.fromRGBO(255, 255, 204, 1))),
