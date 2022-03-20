@@ -35,6 +35,12 @@ class _Dairy extends State<DairyState> {
         title: const Text("Dairy"),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
+          actions: [
+            IconButton(
+              icon: Icon(Icons.shopping_cart),
+              onPressed: () {},
+            )
+          ]
       ),
       body: ListView(
         padding: const EdgeInsets.all(16),
@@ -46,7 +52,6 @@ class _Dairy extends State<DairyState> {
           cardsWidget('assets/images/sourCream.PNG', 'Daisy - Sour Cream'),
           cardsWidget('assets/images/blueYogurt.PNG', 'Chobani - Greek Yogurt - Blueberry'),
           cardsWidget('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
-
         ],
       ),
     );
