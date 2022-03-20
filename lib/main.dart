@@ -3,7 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:king_oopers_app/Off/HomeOff.dart';
 
 void main() {
-  debugPaintSizeEnabled = true;
+  debugPaintSizeEnabled = false;
   runApp(const MaterialApp(
     title: "King Oopers",
     home: Home(),

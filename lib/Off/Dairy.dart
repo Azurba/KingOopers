@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
+import '../CardsWidget.dart';
+
 class DairyState extends StatefulWidget {
   String text = "";
+
   @override
   _Dairy createState() => _Dairy();
 }
@@ -33,38 +36,10 @@ class _Dairy extends State<DairyState> {
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
-      body: Stack(
+      body: ListView(
+        padding: EdgeInsets.all(16),
         children: [
-          Positioned(
-            left: 0,
-            right: 0,
-            top: 0,
-            child: Container(
-              height: MediaQuery.of(context).size.height / 1.35,
-              width: MediaQuery.of(context).size.width,
-              color: Colors.red,
-            ),
-          ),
-          Positioned(
-            left: 0,
-            right: 0,
-            top: MediaQuery.of(context).size.height / 1.35,
-            child: Container(
-              color: Colors.black,
-              height: MediaQuery.of(context).size.height / 1.35,
-              width: MediaQuery.of(context).size.width,
-              child: Column(
-                children: [
-                  Container(
-                    child: const Text(
-                      "Cart",
-                      style: TextStyle(color: Colors.white, fontSize: 30),
-                    ),
-                  )
-                ],
-              ),
-            ),
-          ),
+          cardsWidget('assets/images/csu-logo.png', 'CSU Logo'),
         ],
       ),
     );
