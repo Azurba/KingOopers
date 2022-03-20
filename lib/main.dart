@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:king_oopers_app/Tabs/Pages.dart';
+import 'package:king_oopers_app/Tabs/Dairy.dart';
 
 void main() {
-  debugPaintSizeEnabled = false;
+  debugPaintSizeEnabled = true;
   runApp(const MaterialApp(
     title: "King Oopers",
     home: Home(),
@@ -36,7 +36,8 @@ class Home extends StatelessWidget {
                   style: TextStyle(fontSize: 29.0, color: color),
                 ),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => Pages()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => DairyState()));
                 },
                 style: ElevatedButton.styleFrom(
                     primary: Color.fromRGBO(255, 255, 204, 1))),
@@ -73,8 +74,8 @@ class Home extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         _HomeButtons("Dairy", Colors.red),
-                        _HomeButtons("Meat", Colors.red),
-                        _HomeButtons("Cereal", Colors.red),
+                        _HomeButtons("Meats", Colors.red),
+                        _HomeButtons("Cereals", Colors.red),
                         _HomeButtons("Fruits", Colors.red),
                       ],
                     ))
