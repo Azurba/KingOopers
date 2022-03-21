@@ -1,4 +1,4 @@
-# Elderly reminder app
+# Acessibility for the Elderly (King Oopers app)
 
 # Member information
 
