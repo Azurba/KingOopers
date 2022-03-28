@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:king_oopers_app/Off/Dairy.dart';
+import 'package:king_oopers_app/On/DairyOn.dart';
 
 
 class HomeOn extends StatelessWidget {
@@ -74,7 +75,7 @@ class HomeOn extends StatelessWidget {
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
-                        _HomeButtons("Dairy", DairyState()),
+                        _HomeButtons("Dairy", DairyStateOn()),
                         _HomeButtons("Meats", null),
                         _HomeButtons("Cereals", null),
                         _HomeButtons("Fruits", null),

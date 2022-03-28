@@ -2,15 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
 import '../Off/CardsWidgetOff.dart';
+import 'CardsWidgetOn.dart';
 
-class DairyState extends StatefulWidget {
+class DairyStateOn extends StatefulWidget {
   String text = "";
 
   @override
   _DairyOn createState() => _DairyOn();
 }
 
-class _DairyOn extends State<DairyState> {
+class _DairyOn extends State<DairyStateOn> {
   Widget _background() => Container(
     //background
     decoration: const BoxDecoration(
@@ -45,13 +46,13 @@ class _DairyOn extends State<DairyState> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          cardsWidgetOff('assets/images/milk.png', 'Borden - 2% milk'),
-          cardsWidgetOff('assets/images/LacotoseFree.PNG', 'Fa!rlife - Lactose Free Milk'),
-          cardsWidgetOff('assets/images/chedarCheese.PNG', 'Kroger - Mild Cheddar Cheese - Block'),
-          cardsWidgetOff('assets/images/ProvoloneCheese.PNG', 'Sargento - Provolone Cheese - Slices'),
-          cardsWidgetOff('assets/images/sourCream.PNG', 'Daisy - Sour Cream'),
-          cardsWidgetOff('assets/images/blueYogurt.PNG', 'Chobani - Greek Yogurt - Blueberry'),
-          cardsWidgetOff('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
+          cardsWidgetOn('assets/images/milk.png', 'Borden - 2% milk'),
+          cardsWidgetOn('assets/images/LacotoseFree.PNG', 'Fa!rlife - Lactose Free Milk'),
+          cardsWidgetOn('assets/images/chedarCheese.PNG', 'Kroger - Mild Cheddar Cheese - Block'),
+          cardsWidgetOn('assets/images/ProvoloneCheese.PNG', 'Sargento - Provolone Cheese - Slices'),
+          cardsWidgetOn('assets/images/sourCream.PNG', 'Daisy - Sour Cream'),
+          cardsWidgetOn('assets/images/blueYogurt.PNG', 'Chobani - Greek Yogurt - Blueberry'),
+          cardsWidgetOn('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
         ],
       ),
     );
