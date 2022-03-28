@@ -1,40 +1,40 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import './CardsWidgetOff.dart';
+import '../Off/CardsWidgetOff.dart';
 
 class DairyState extends StatefulWidget {
   String text = "";
 
   @override
-  _Dairy createState() => _Dairy();
+  _DairyOn createState() => _DairyOn();
 }
 
-class _Dairy extends State<DairyState> {
+class _DairyOn extends State<DairyState> {
   Widget _background() => Container(
-        //background
-        decoration: const BoxDecoration(
-            gradient: LinearGradient(
-                colors: [Colors.blue, Colors.white],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight)),
-      );
+    //background
+    decoration: const BoxDecoration(
+        gradient: LinearGradient(
+            colors: [Colors.blue, Colors.white],
+            begin: Alignment.topLeft,
+            end: Alignment.bottomRight)),
+  );
 
   @override
   Widget build(BuildContext context) {
     const _cartHeight = 100.0;
     return Scaffold(
       appBar: AppBar(
-        leading: Builder(builder: (BuildContext context) {
-          return IconButton(
-              icon: const Icon(Icons.arrow_back),
-              onPressed: () {
-                Navigator.pop(context);
-              });
-        }),
-        title: const Text("Dairy"),
-        centerTitle: true,
-        backgroundColor: Colors.red,
+          leading: Builder(builder: (BuildContext context) {
+            return IconButton(
+                icon: const Icon(Icons.arrow_back),
+                onPressed: () {
+                  Navigator.pop(context);
+                });
+          }),
+          title: const Text("Dairy"),
+          centerTitle: true,
+          backgroundColor: Colors.blueAccent,
           actions: [
             IconButton(
               icon: Icon(Icons.shopping_cart),

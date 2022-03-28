@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:king_oopers_app/Off/Dairy.dart';
 
-import '../main.dart';
 
-class HomeOff extends StatelessWidget {
-  const HomeOff({Key? key}) : super(key: key);
+class HomeOn extends StatelessWidget {
+  const HomeOn({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +11,7 @@ class HomeOff extends StatelessWidget {
       //background
       decoration: const BoxDecoration(
           gradient: LinearGradient(
-              colors: [Colors.red, Colors.redAccent],
+              colors: [Colors.yellow, Colors.yellowAccent],
               begin: Alignment.topLeft,
               end: Alignment.bottomRight)),
     );
@@ -20,20 +19,20 @@ class HomeOff extends StatelessWidget {
     //ADD navigateTo to arguments
     // ignore: non_constant_identifier_names
     Widget _HomeButtons(String text, navigateTo) => Padding(
-      padding: const EdgeInsets.fromLTRB(1, 0, 1, 1),
+      padding: const EdgeInsets.fromLTRB(1, 0, 1, 50),
       child: SizedBox(
         width: 215,
         child: ElevatedButton(
             child: Text(
               text,
-              style: const TextStyle(fontSize: 19.0, color: Colors.black),
+              style: const TextStyle(fontSize: 39.0, color: Colors.white),
             ),
             onPressed: () {
               Navigator.push(context,
                   MaterialPageRoute(builder: (context) => navigateTo));
             },
             style: ElevatedButton.styleFrom(
-                primary: Colors.orange)),
+                primary: Colors.blue)),
       ),
     );
 
@@ -44,7 +43,7 @@ class HomeOff extends StatelessWidget {
               return IconButton(onPressed: () {
                 Navigator.pop(context);
               }, icon: const Icon(Icons.arrow_back),
-              color: Colors.black, iconSize: 20,
+                color: Colors.black, iconSize: 20,
               );
             },
           ),

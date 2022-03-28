@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:king_oopers_app/Off/HomeOff.dart';
+import 'package:king_oopers_app/On/HomeOn.dart';
 
 void main() {
   debugPaintSizeEnabled = false;
@@ -74,7 +75,7 @@ class Home extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         _HomeButtons("Accessibility Off", const HomeOff()),
-                        _HomeButtons("Accessibility On", null),
+                        _HomeButtons("Accessibility On", const HomeOn()),
                       ],
                     )),
                 Padding(
