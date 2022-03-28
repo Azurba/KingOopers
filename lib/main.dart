@@ -4,7 +4,7 @@ import 'package:king_oopers_app/Off/HomeOff.dart';
 import 'package:king_oopers_app/On/HomeOn.dart';
 
 void main() {
-  debugPaintSizeEnabled = false;
+  debugPaintSizeEnabled = true;
   runApp(const MaterialApp(
     title: "King Oopers",
     home: Home(),
