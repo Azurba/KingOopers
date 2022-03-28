@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:king_oopers_app/On/NavigationBarOn.dart';
 
 import '../Off/CardsWidgetOff.dart';
 import 'CardsWidgetOn.dart';
@@ -56,6 +57,7 @@ class _DairyOn extends State<DairyStateOn> {
           cardsWidgetOn('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
         ],
       ),
+        bottomNavigationBar: bottomNavigationOn()
     );
   }
 }

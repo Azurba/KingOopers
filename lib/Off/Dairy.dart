@@ -55,6 +55,11 @@ class _Dairy extends State<DairyState> {
           cardsWidgetOff('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
         ],
       ),
+        bottomNavigationBar: BottomNavigationBar(
+            items: const [
+              BottomNavigationBarItem(icon: Icon(Icons.shopping_cart,), label: "", backgroundColor: Colors.black54),
+              BottomNavigationBarItem(icon: Icon(Icons.location_on), label: "", backgroundColor: Colors.black54)]
+        )
     );
   }
 }

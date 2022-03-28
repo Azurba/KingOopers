@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:king_oopers_app/Off/Dairy.dart';
+import 'package:king_oopers_app/Off/NavigationBarOff.dart';
 
 import '../main.dart';
 
@@ -93,11 +94,7 @@ class HomeOff extends StatelessWidget {
             )
           ],
         ),
-        bottomNavigationBar: BottomNavigationBar(
-    items: const [
-    BottomNavigationBarItem(icon: Icon(Icons.shopping_cart,), label: "", backgroundColor: Colors.black54),
-      BottomNavigationBarItem(icon: Icon(Icons.location_on), label: "", backgroundColor: Colors.black54)]
-        )
+        bottomNavigationBar: bottomNavigationOff()
     );
   }
 }
