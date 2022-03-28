@@ -13,25 +13,25 @@ Widget buyButton() => SizedBox(
     width: 260,
     child: TextButton(
       style: ButtonStyle(
-          backgroundColor: MaterialStateProperty.all(Colors.blueAccent)),
+          backgroundColor: MaterialStateProperty.all(Colors.redAccent)),
       onPressed: () {},
       child: const Text(
         'Add to Cart',
-        style: TextStyle(color: Colors.white, fontSize: 20),
+        style: TextStyle(color: Colors.black45, fontSize: 20),
       ),
     ));
 
 Widget quantityButton() => Container(
   padding: EdgeInsets.all(3),
   decoration: BoxDecoration(
-      borderRadius: BorderRadius.circular(5), color: Colors.blueAccent),
+      borderRadius: BorderRadius.circular(5), color: Colors.redAccent),
   child: Row(
     children: [
       InkWell(
           onTap: () {},
           child: const Icon(
             Icons.remove,
-            color: Colors.white,
+            color: Colors.black45,
             size: 25,
           )),
 
@@ -49,7 +49,7 @@ Widget quantityButton() => Container(
           onTap: () {},
           child: const Icon(
             Icons.add,
-            color: Colors.white,
+            color: Colors.black45,
             size: 25,
           )),
     ],

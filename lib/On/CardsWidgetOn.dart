@@ -22,10 +22,10 @@ Widget buyButton() => SizedBox(
     ));
 
 Widget quantityButton() =>
-    Padding(padding: EdgeInsets.fromLTRB(5, 10, 5, 40),
+    Padding(padding: const EdgeInsets.fromLTRB(5, 10, 5, 40),
       child:
       Container(
-        padding: EdgeInsets.all(3),
+        padding: const EdgeInsets.all(3),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(5), color: Colors.blueAccent),
         child: Row(
@@ -62,9 +62,11 @@ Widget quantityButton() =>
 
 
 Widget cardsWidgetOn(String image, String cardText) => Card(
+  color: Colors.white,
   clipBehavior: Clip.antiAlias,
   shape: RoundedRectangleBorder(
     borderRadius: BorderRadius.circular(24),
+
   ),
   child: Column(
     children: [
@@ -84,7 +86,7 @@ Widget cardsWidgetOn(String image, String cardText) => Card(
         ),
       ),
       ButtonBar(
-        alignment: MainAxisAlignment.start,
+        alignment: MainAxisAlignment.center,
         children: [
           Column(
             children: [

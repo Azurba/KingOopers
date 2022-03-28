@@ -27,21 +27,22 @@ class _Dairy extends State<DairyState> {
       appBar: AppBar(
         leading: Builder(builder: (BuildContext context) {
           return IconButton(
-              icon: const Icon(Icons.arrow_back),
+              icon: const Icon(Icons.arrow_back, color: Colors.black45,),
               onPressed: () {
                 Navigator.pop(context);
               });
         }),
-        title: const Text("Dairy"),
+        title: const Text("Dairy", style: TextStyle(color: Colors.black45),),
         centerTitle: true,
         backgroundColor: Colors.red,
           actions: [
             IconButton(
-              icon: Icon(Icons.shopping_cart),
+              icon: const Icon(Icons.shopping_cart, color: Colors.black45),
               onPressed: () {},
             )
           ]
       ),
+      backgroundColor: Colors.white,
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
