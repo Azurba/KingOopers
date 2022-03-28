@@ -21,80 +21,76 @@ Widget buyButton() => SizedBox(
       ),
     ));
 
-Widget quantityButton() =>
-    Padding(padding: const EdgeInsets.fromLTRB(5, 10, 5, 40),
-      child:
-      Container(
-        padding: const EdgeInsets.all(3),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(5), color: Colors.blueAccent),
-        child: Row(
-          children: [
-            InkWell(
-                onTap: () {},
-                child: const Icon(
-                  Icons.remove,
-                  color: Colors.white,
-                  size: 25,
-                )),
-
-            Container(
-              margin: const EdgeInsets.symmetric(horizontal: 3),
-              padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 2),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(3), color: Colors.white),
-              child: const Text(
-                '1',
-                style: TextStyle(color: Colors.black, fontSize: 25),
-              ),
-            ),
-            InkWell(
-                onTap: () {},
-                child: const Icon(
-                  Icons.add,
-                  color: Colors.white,
-                  size: 25,
-                )),
-          ],
-        ),
-      )
-    );
-
-
-Widget cardsWidgetOn(String image, String cardText) => Card(
-  color: Colors.white,
-  clipBehavior: Clip.antiAlias,
-  shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(24),
-
-  ),
-  child: Column(
-    children: [
-      Stack(
+Widget quantityButton() => Padding(
+    padding: const EdgeInsets.fromLTRB(5, 10, 5, 40),
+    child: Container(
+      padding: const EdgeInsets.all(3),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5), color: Colors.blueAccent),
+      child: Row(
         children: [
-          Ink.image(
-            image: AssetImage(image),
-            height: 240,
+          InkWell(
+              onTap: () {},
+              child: const Icon(
+                Icons.remove,
+                color: Colors.white,
+                size: 25,
+              )),
+          Container(
+            margin: const EdgeInsets.symmetric(horizontal: 3),
+            padding: const EdgeInsets.symmetric(horizontal: 3, vertical: 2),
+            decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(3), color: Colors.white),
+            child: const Text(
+              '1',
+              style: TextStyle(color: Colors.black, fontSize: 25),
+            ),
           ),
+          InkWell(
+              onTap: () {},
+              child: const Icon(
+                Icons.add,
+                color: Colors.white,
+                size: 25,
+              )),
         ],
       ),
-      Padding(
-        padding: const EdgeInsets.all(16).copyWith(bottom: 0),
-        child: Text(
-          cardText,
-          style: const TextStyle(fontSize: 16),
-        ),
+    ));
+
+Widget cardsWidgetOn(String image, String cardText) => Card(
+      color: Colors.white,
+      clipBehavior: Clip.antiAlias,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(24),
       ),
-      ButtonBar(
-        alignment: MainAxisAlignment.center,
+      child: Column(
         children: [
-          Column(
+          Stack(
             children: [
-              quantityButton(), buyButton(),
+              Ink.image(
+                image: AssetImage(image),
+                height: 240,
+              ),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16).copyWith(bottom: 0),
+            child: Text(
+              cardText,
+              style: const TextStyle(fontSize: 16),
+            ),
+          ),
+          ButtonBar(
+            alignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                children: [
+                  quantityButton(),
+                  buyButton(),
+                ],
+              )
             ],
           )
-          ],
-      )
-    ],
-  ),
-);
+        ],
+      ),
+    );
