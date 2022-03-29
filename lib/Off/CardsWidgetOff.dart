@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class CardsWidgeOff extends StatefulWidget {
   String cardText = '';
@@ -50,13 +51,23 @@ class _CardsWidgeOnState extends State<CardsWidgeOff> {
     ),
   );
 
+  void showToast() => Fluttertoast.showToast(
+    msg: "Product added to your Cart!",
+    fontSize: 30,
+    gravity: ToastGravity.TOP,
+    backgroundColor: Colors.blueAccent,
+    textColor: Colors.black54
+  );
+
   Widget buyButton() => SizedBox(
       height: 38,
       width: 260,
       child: TextButton(
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.blueAccent)),
-        onPressed: () {},
+        onPressed: () {
+          showToast();
+        },
         child: const Text(
           'Add to Cart',
           style: TextStyle(color: Colors.black45, fontSize: 20),
