@@ -47,7 +47,9 @@ class _DairyOn extends State<DairyStateOn> {
       backgroundColor: Colors.redAccent,
       body: ListView(
         padding: const EdgeInsets.all(16),
-        children: [
+        children: const [
+          CardsWidgeOn()
+          /*
           cardsWidgetOn('assets/images/milk.png', 'Borden - 2% milk'),
           cardsWidgetOn('assets/images/LacotoseFree.PNG', 'Fa!rlife - Lactose Free Milk'),
           cardsWidgetOn('assets/images/chedarCheese.PNG', 'Kroger - Mild Cheddar Cheese - Block'),
@@ -55,6 +57,7 @@ class _DairyOn extends State<DairyStateOn> {
           cardsWidgetOn('assets/images/sourCream.PNG', 'Daisy - Sour Cream'),
           cardsWidgetOn('assets/images/blueYogurt.PNG', 'Chobani - Greek Yogurt - Blueberry'),
           cardsWidgetOn('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
+        */
         ],
       ),
         bottomNavigationBar: bottomNavigationOn()
