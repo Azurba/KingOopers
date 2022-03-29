@@ -45,6 +45,7 @@ dependencies:
   firebase_auth: 3.3.11
   url_launcher: ^6.0.20
   firebase_core: ^1.13.1
+  get: ^4.6.1
 
 
 dev_dependencies:
