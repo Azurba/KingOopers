@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:king_oopers_app/Off/Dairy.dart';
 import 'package:king_oopers_app/On/DairyOn.dart';
 
@@ -28,8 +30,10 @@ class HomeOn extends StatelessWidget {
                   style: const TextStyle(fontSize: 39.0, color: Colors.white),
                 ),
                 onPressed: () {
+                  Get.to(navigateTo);
+                  /*
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => navigateTo));
+                      MaterialPageRoute(builder: (context) => navigateTo));*/
                 },
                 style: ElevatedButton.styleFrom(primary: Colors.blue)),
           ),

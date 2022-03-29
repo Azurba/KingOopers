@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:get/get.dart';
 import 'package:king_oopers_app/Off/HomeOff.dart';
 import 'package:king_oopers_app/On/HomeOn.dart';
 
 void main() {
   debugPaintSizeEnabled = false;
-  runApp(const MaterialApp(
+  runApp(const GetMaterialApp(
     title: "King Oopers",
     home: Home(),
   ));
@@ -38,8 +39,10 @@ class Home extends StatelessWidget {
               textAlign: TextAlign.center,
             ),
             onPressed: () {
+              Get.to(navigateTo);
+              /*
               Navigator.push(
-                  context, MaterialPageRoute(builder: (context) => navigateTo));
+                  context, MaterialPageRoute(builder: (context) => navigateTo));*/
             },
             style: ElevatedButton.styleFrom(primary: Colors.white),
           ),
