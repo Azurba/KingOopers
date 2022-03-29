@@ -13,15 +13,6 @@ class DairyStateOn extends StatefulWidget {
 }
 
 class _DairyOn extends State<DairyStateOn> {
-  Widget _background() => Container(
-    //background
-    decoration: const BoxDecoration(
-        gradient: LinearGradient(
-            colors: [Colors.blue, Colors.white],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight)),
-  );
-
   @override
   Widget build(BuildContext context) {
     const _cartHeight = 100.0;
@@ -29,22 +20,17 @@ class _DairyOn extends State<DairyStateOn> {
       appBar: AppBar(
           leading: Builder(builder: (BuildContext context) {
             return IconButton(
+                iconSize: 50,
                 icon: const Icon(Icons.arrow_back),
                 onPressed: () {
                   Navigator.pop(context);
                 });
           }),
-          title: const Text("Dairy"),
+          title: const Text("Dairy", style: TextStyle(fontSize: 35),),
           centerTitle: true,
           backgroundColor: Colors.blueAccent,
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.shopping_cart),
-              onPressed: () {},
-            )
-          ]
       ),
-      backgroundColor: Colors.redAccent,
+      backgroundColor: Colors.yellowAccent,
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
