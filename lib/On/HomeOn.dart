@@ -49,7 +49,7 @@ class HomeOn extends StatelessWidget {
                 },
                 icon: const Icon(Icons.arrow_back),
                 color: Colors.black,
-                iconSize: 20,
+                iconSize: 50,
               );
             },
           ),

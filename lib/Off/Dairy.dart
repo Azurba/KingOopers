@@ -11,14 +11,6 @@ class DairyState extends StatefulWidget {
 }
 
 class _Dairy extends State<DairyState> {
-  Widget _background() => Container(
-        //background
-        decoration: const BoxDecoration(
-            gradient: LinearGradient(
-                colors: [Colors.blue, Colors.white],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight)),
-      );
 
   @override
   Widget build(BuildContext context) {
@@ -35,12 +27,6 @@ class _Dairy extends State<DairyState> {
         title: const Text("Dairy", style: TextStyle(color: Colors.black45),),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.shopping_cart, color: Colors.black45),
-              onPressed: () {},
-            )
-          ]
       ),
       backgroundColor: Colors.white,
       body: ListView(
