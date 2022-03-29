@@ -1,26 +1,25 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CardsWidgeOn extends StatefulWidget {
-  const CardsWidgeOn({Key? key}) : super(key: key);
+  String cardText = '';
+  String imageSource = '';
+  CardsWidgeOn(this.imageSource, this.cardText, );
 
   @override
   State<CardsWidgeOn> createState() => _CardsWidgeOnState();
 }
 
-
-
-
 class _CardsWidgeOnState extends State<CardsWidgeOn> {
   int _quantity = 1;
+  String imageSource = '';
+  String cardText = '';
 
   @override
   Widget build(BuildContext context) {
-    return cardsWidgetOff('assets/images/milk.png', 'Borden - 2% milk');
+    return cardsWidgetOn(widget.imageSource, widget.cardText);
   }
 
-
-  Widget cardsWidgetOff(String image, String cardText) => Card(
+  Widget cardsWidgetOn(String imageSource, String cardText) => Card(
     clipBehavior: Clip.antiAlias,
     shape: RoundedRectangleBorder(
       borderRadius: BorderRadius.circular(24),
@@ -30,7 +29,7 @@ class _CardsWidgeOnState extends State<CardsWidgeOn> {
         Stack(
           children: [
             Ink.image(
-              image: AssetImage(image),
+              image: AssetImage(imageSource),
               height: 240,
             ),
           ],
@@ -74,6 +73,9 @@ class _CardsWidgeOnState extends State<CardsWidgeOn> {
             onTap: () {
               setState(() {
                 _quantity -= 1;
+                if(_quantity <= 0){
+                  _quantity = 0;
+                }
               });
             },
             child: const Icon(
@@ -96,6 +98,9 @@ class _CardsWidgeOnState extends State<CardsWidgeOn> {
             onTap: () {
               setState(() {
                 _quantity += 1;
+                if(_quantity <= 0){
+                  _quantity = 0;
+                }
               });
             },
             child: const Icon(

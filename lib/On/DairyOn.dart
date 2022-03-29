@@ -39,7 +39,7 @@ class _DairyOn extends State<DairyStateOn> {
           backgroundColor: Colors.blueAccent,
           actions: [
             IconButton(
-              icon: Icon(Icons.shopping_cart),
+              icon: const Icon(Icons.shopping_cart),
               onPressed: () {},
             )
           ]
@@ -47,17 +47,15 @@ class _DairyOn extends State<DairyStateOn> {
       backgroundColor: Colors.redAccent,
       body: ListView(
         padding: const EdgeInsets.all(16),
-        children: const [
-          CardsWidgeOn()
-          /*
-          cardsWidgetOn('assets/images/milk.png', 'Borden - 2% milk'),
-          cardsWidgetOn('assets/images/LacotoseFree.PNG', 'Fa!rlife - Lactose Free Milk'),
-          cardsWidgetOn('assets/images/chedarCheese.PNG', 'Kroger - Mild Cheddar Cheese - Block'),
-          cardsWidgetOn('assets/images/ProvoloneCheese.PNG', 'Sargento - Provolone Cheese - Slices'),
-          cardsWidgetOn('assets/images/sourCream.PNG', 'Daisy - Sour Cream'),
-          cardsWidgetOn('assets/images/blueYogurt.PNG', 'Chobani - Greek Yogurt - Blueberry'),
-          cardsWidgetOn('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
-        */
+        children: [
+          CardsWidgeOn('assets/images/milk.png', 'Borden - 2% milk'),
+          CardsWidgeOn('assets/images/LacotoseFree.PNG', 'Fa!rlife - Lactose Free Milk'),
+          CardsWidgeOn('assets/images/chedarCheese.PNG', 'Kroger - Mild Cheddar Cheese - Block'),
+          CardsWidgeOn('assets/images/ProvoloneCheese.PNG', 'Sargento - Provolone Cheese - Slices'),
+          CardsWidgeOn('assets/images/sourCream.PNG', 'Daisy - Sour Cream'),
+          CardsWidgeOn('assets/images/blueYogurt.PNG', 'Chobani - Greek Yogurt - Blueberry'),
+          CardsWidgeOn('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
+
         ],
       ),
         bottomNavigationBar: bottomNavigationOn()
