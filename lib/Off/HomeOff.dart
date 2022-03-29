@@ -53,7 +53,7 @@ class HomeOff extends StatelessWidget {
           ),
           title: const Text(
             "King Oopers",
-            style: TextStyle(color: Colors.black, fontSize: 35),
+            style: TextStyle(color: Colors.black),
           ),
           centerTitle: true,
           backgroundColor: Colors.white,
@@ -88,13 +88,26 @@ class HomeOff extends StatelessWidget {
                         _HomeButtons("Meats", null),
                         _HomeButtons("Cereals", null),
                         _HomeButtons("Fruits", null),
+                        _HomeButtons("Find Shop", null),
                       ],
                     ))
               ],
             )
           ],
         ),
-        bottomNavigationBar: bottomNavigationOff()
+        bottomNavigationBar: BottomNavigationBar(
+            items: const [
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.shopping_cart
+                  ),
+                  label: "",
+                  backgroundColor: Colors.black54),
+              BottomNavigationBarItem(
+                  icon: Icon(Icons.account_circle),
+                  label: "",
+                  backgroundColor: Colors.black54)
+            ]),
     );
   }
 }

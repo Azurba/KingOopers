@@ -65,7 +65,8 @@ class _CardsWidgeOnState extends State<CardsWidgeOff> {
       child: TextButton(
         style: ButtonStyle(
             backgroundColor: MaterialStateProperty.all(Colors.blueAccent)),
-        onPressed: () {
+        onPressed: () {},
+        onLongPress: () {
           showToast();
         },
         child: const Text(

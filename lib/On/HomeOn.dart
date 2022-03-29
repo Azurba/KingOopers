@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
-import 'package:king_oopers_app/Off/Dairy.dart';
 import 'package:king_oopers_app/On/DairyOn.dart';
 
 class HomeOn extends StatelessWidget {
@@ -84,6 +82,7 @@ class HomeOn extends StatelessWidget {
                         _HomeButtons("Meats", null),
                         _HomeButtons("Cereals", null),
                         _HomeButtons("Fruits", null),
+                        _HomeButtons("Find Shop", null),
                       ],
                     ))
               ],
@@ -102,8 +101,8 @@ class HomeOn extends StatelessWidget {
               label: "Cart",
               backgroundColor: Colors.black54),
           BottomNavigationBarItem(
-              icon: Icon(Icons.location_on, size: 40),
-              label: "Find Shop",
+              icon: Icon(Icons.account_circle, size: 40),
+              label: "Account",
               backgroundColor: Colors.black54)
         ]));
   }
