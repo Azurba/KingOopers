@@ -48,11 +48,13 @@ class DepartmentOn extends StatelessWidget {
               style: TextStyle(fontSize: 39.0, color: Colors.white),
             ),
             onPressed: () {
-              Get.to(const Home());
               /*
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => navigateTo));*/
             },
+            onLongPress: () {
+              Get.to(const Home());
+            } ,
             style: ElevatedButton.styleFrom(primary: Colors.red)),
       ),
     );
