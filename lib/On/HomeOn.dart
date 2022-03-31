@@ -9,8 +9,6 @@ class HomeOn extends StatefulWidget {
   @override
   State<HomeOn> createState() => _HomeOnState();
 }
-
-
 class _HomeOnState extends State<HomeOn> {
   int _currentIndex = 0;
   @override
@@ -18,7 +16,6 @@ class _HomeOnState extends State<HomeOn> {
 
     final List<Widget>screens = [
       const DepartmentOn(),
-      const CartOn(),
       const FindUs(),
     ];
 
@@ -29,6 +26,7 @@ class _HomeOnState extends State<HomeOn> {
     }
 
     return Scaffold(
+      /*
         appBar: AppBar(
           leading: Builder(
             builder: (BuildContext context) {
@@ -49,6 +47,7 @@ class _HomeOnState extends State<HomeOn> {
           centerTitle: true,
           backgroundColor: Colors.white,
         ),
+       */
         body: screens[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
             onTap: onTapFunction,
@@ -67,6 +66,7 @@ class _HomeOnState extends State<HomeOn> {
                   ),
                   label: "Menu",
                   backgroundColor: Colors.black54),
+              /*
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.shopping_cart,
@@ -75,6 +75,7 @@ class _HomeOnState extends State<HomeOn> {
                   ),
                   label: "Cart",
                   backgroundColor: Colors.black54),
+              */
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.location_on,

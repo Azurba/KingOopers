@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:king_oopers_app/On/CartOn.dart';
+import 'package:king_oopers_app/On/DepartmentsOn.dart';
+import 'package:king_oopers_app/On/HomeOn.dart';
 import 'package:king_oopers_app/On/NavigationBarOn.dart';
 import '../Off/CardsWidgetOff.dart';
 import 'CardsWidgetOn.dart';
 
 class DairyStateOn extends StatefulWidget {
-  String text = "";
 
   @override
   _DairyOn createState() => _DairyOn();
@@ -13,20 +16,34 @@ class DairyStateOn extends StatefulWidget {
 class _DairyOn extends State<DairyStateOn> {
   @override
   Widget build(BuildContext context) {
-    const _cartHeight = 100.0;
     return Scaffold(
       appBar: AppBar(
           leading: Builder(builder: (BuildContext context) {
-            return IconButton(
-                iconSize: 50,
-                icon: const Icon(Icons.arrow_back),
-                onPressed: () {
-                  Navigator.pop(context);
-                });
+            return
+              Padding(padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+                child:
+                IconButton(
+                  icon: const Icon(Icons.arrow_back, size: 40),
+                  onPressed: () {
+                    Get.to(const HomeOn());
+                  },
+                ),
+              );
           }),
           title: const Text("Dairy", style: TextStyle(fontSize: 35),),
           centerTitle: true,
           backgroundColor: Colors.blueAccent,
+        actions: [
+          Padding(padding: const EdgeInsets.fromLTRB(0, 0, 20, 0),
+          child:
+          IconButton(
+            icon: const Icon(Icons.shopping_cart, size: 40),
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => CartOn()));
+            },
+          ),
+          ),
+        ],
       ),
       backgroundColor: Colors.yellowAccent,
       body: ListView(
