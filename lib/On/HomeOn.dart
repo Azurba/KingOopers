@@ -1,41 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:king_oopers_app/On/DairyOn.dart';
+import 'package:king_oopers_app/On/CartOn.dart';
+import 'package:king_oopers_app/On/DepartmentsOn.dart';
+import 'package:king_oopers_app/On/FindUsOn.dart';
 
-class HomeOn extends StatelessWidget {
+class HomeOn extends StatefulWidget {
   const HomeOn({Key? key}) : super(key: key);
 
   @override
-  Widget build(BuildContext context) {
-    Widget _background() => Container(
-          //background
-          decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  colors: [Colors.yellow, Colors.yellowAccent],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight)),
-        );
+  State<HomeOn> createState() => _HomeOnState();
+}
 
-    //ADD navigateTo to arguments
-    // ignore: non_constant_identifier_names
-    Widget _HomeButtons(String text, navigateTo) => Padding(
-          padding: const EdgeInsets.fromLTRB(1, 0, 1, 50),
-          child: SizedBox(
-            width: 215,
-            child: ElevatedButton(
-                child: Text(
-                  text,
-                  style: const TextStyle(fontSize: 39.0, color: Colors.white),
-                ),
-                onPressed: () {
-                  Get.to(navigateTo);
-                  /*
-                  Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => navigateTo));*/
-                },
-                style: ElevatedButton.styleFrom(primary: Colors.blue)),
-          ),
-        );
+
+class _HomeOnState extends State<HomeOn> {
+  int _currentIndex = 0;
+  @override
+  Widget build(BuildContext context) {
+
+    final List<Widget>screens = [
+      const DepartmentOn(),
+      const CartOn(),
+      const FindUs(),
+    ];
+
+    void onTapFunction(index) {
+      setState(() {
+        _currentIndex = index;
+      });
+    }
 
     return Scaffold(
         appBar: AppBar(
@@ -58,52 +49,40 @@ class HomeOn extends StatelessWidget {
           centerTitle: true,
           backgroundColor: Colors.white,
         ),
-        body: Stack(
-          children: [
-            _background(),
-            Column(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
-                  child: Container(
-                      height: MediaQuery.of(context).size.height / 10,
-                      width: MediaQuery.of(context).size.width,
-                      decoration: const BoxDecoration(
-                        image: DecorationImage(
-                            image: AssetImage('assets/images/kingOopers.PNG')),
-                      )),
-                ),
-                Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 40, 0, 0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        _HomeButtons("Dairy", DairyStateOn()),
-                        _HomeButtons("Meats", null),
-                        _HomeButtons("Cereals", null),
-                        _HomeButtons("Fruits", null),
-                        _HomeButtons("Find Shop", null),
-                      ],
-                    ))
-              ],
-            )
-          ],
-        ),
+        body: screens[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
-          selectedFontSize: 30,
+            onTap: onTapFunction,
+            currentIndex: _currentIndex,
+            backgroundColor: Colors.blueAccent,
+            selectedItemColor: Colors.yellowAccent,
+            selectedFontSize: 30,
             unselectedFontSize: 30,
+            unselectedItemColor: Colors.white,
             items: const [
-          BottomNavigationBarItem(
-              icon: Icon(
-                Icons.shopping_cart,
-                size: 40,
-              ),
-              label: "Cart",
-              backgroundColor: Colors.black54),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.account_circle, size: 40),
-              label: "Account",
-              backgroundColor: Colors.black54)
-        ]));
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.menu,
+                    size: 40,
+                    color: Colors.white,
+                  ),
+                  label: "Menu",
+                  backgroundColor: Colors.black54),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.shopping_cart,
+                    size: 40,
+                    color: Colors.white,
+                  ),
+                  label: "Cart",
+                  backgroundColor: Colors.black54),
+              BottomNavigationBarItem(
+                  icon: Icon(
+                    Icons.location_on,
+                    size: 40,
+                    color: Colors.white,
+                  ),
+                  label: "Find us",
+                  backgroundColor: Colors.black54),
+            ]));
   }
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:king_oopers_app/On/NavigationBarOn.dart';
-
 import '../Off/CardsWidgetOff.dart';
 import 'CardsWidgetOn.dart';
 
@@ -43,7 +42,6 @@ class _DairyOn extends State<DairyStateOn> {
 
         ],
       ),
-        bottomNavigationBar: bottomNavigationOn()
     );
   }
 }

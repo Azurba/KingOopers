@@ -10,7 +10,7 @@ class NavigationBarOff extends StatelessWidget {
 
 BottomNavigationBar bottomNavigationOff() {
   return BottomNavigationBar(
-      backgroundColor: Colors.orange,
+      backgroundColor: Colors.blueAccent,
       fixedColor: Colors.white,
       unselectedItemColor: Colors.white,
       items: const [

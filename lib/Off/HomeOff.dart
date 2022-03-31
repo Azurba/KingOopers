@@ -95,7 +95,9 @@ class HomeOff extends StatelessWidget {
             )
           ],
         ),
-        bottomNavigationBar: BottomNavigationBar(
+        bottomNavigationBar: bottomNavigationOff()
+            /*
+        BottomNavigationBar(
             items: const [
               BottomNavigationBarItem(
                   icon: Icon(
@@ -108,6 +110,7 @@ class HomeOff extends StatelessWidget {
                   label: "",
                   backgroundColor: Colors.black54)
             ]),
+      */
     );
   }
 }
