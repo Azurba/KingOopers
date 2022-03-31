@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:king_oopers_app/main.dart';
 
 import 'DairyOn.dart';
 
@@ -37,13 +38,32 @@ class DepartmentOn extends StatelessWidget {
       ),
     );
 
+    Widget _ExitButton() => Padding(
+      padding: const EdgeInsets.fromLTRB(1, 0, 1, 1),
+      child: SizedBox(
+        width: 230,
+        child: ElevatedButton(
+            child: const Text(
+              "Exit",
+              style: TextStyle(fontSize: 39.0, color: Colors.white),
+            ),
+            onPressed: () {
+              Get.to(const Home());
+              /*
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => navigateTo));*/
+            },
+            style: ElevatedButton.styleFrom(primary: Colors.red)),
+      ),
+    );
+
     return Stack(
       children: [
         _background(),
         Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 100, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 70, 0, 0),
               child: Container(
                   height: MediaQuery.of(context).size.height / 10,
                   width: MediaQuery.of(context).size.width,
@@ -62,6 +82,7 @@ class DepartmentOn extends StatelessWidget {
                     _HomeButtons("Cereals", null),
                     _HomeButtons("Fruits", null),
                     _HomeButtons("Contact us", null),
+                    _ExitButton()
                   ],
                 ))
           ],
