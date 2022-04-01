@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:king_oopers_app/On/LoginScreenOn.dart';
 import 'package:king_oopers_app/main.dart';
 
 import 'DairyOn.dart';
@@ -20,7 +21,7 @@ class DepartmentOn extends StatelessWidget {
 
     // ignore: non_constant_identifier_names
     Widget _HomeButtons(String text, navigateTo) => Padding(
-      padding: const EdgeInsets.fromLTRB(1, 0, 1, 50),
+      padding: const EdgeInsets.fromLTRB(1, 0, 1, 40),
       child: SizedBox(
         width: 230,
         child: ElevatedButton(
@@ -84,6 +85,7 @@ class DepartmentOn extends StatelessWidget {
                     _HomeButtons("Cereals", null),
                     _HomeButtons("Fruits", null),
                     _HomeButtons("Contact us", null),
+                    _HomeButtons("Account", const LoginScreenOn()),
                     _ExitButton()
                   ],
                 ))
