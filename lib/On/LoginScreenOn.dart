@@ -76,15 +76,16 @@ class _LoginScreenOnState extends State<LoginScreenOn> {
                       const Text(
                         'Sign In',
                         style: TextStyle(
-                            color: Colors.white,
+                            color: Colors.blueAccent,
                             fontSize: 40,
                             fontWeight: FontWeight.bold),
                       ),
-                      SizedBox(height: 50),
+                      const SizedBox(height: 50),
                       buildEmail(),
-                      SizedBox(height: 30),
+                      const SizedBox(height: 30),
                       buildPassword(),
-                      forgotPassword()
+                      forgotPassword(),
+                      logInButton(),
                     ],
                   ),
                 )
@@ -100,9 +101,9 @@ class _LoginScreenOnState extends State<LoginScreenOn> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-         Text('Email', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+         const Text('Email', style: TextStyle(color: Colors.blueAccent, fontSize: 30, fontWeight: FontWeight.bold),
         ),
-         SizedBox(height: 10),
+         const SizedBox(height: 10),
         Container(
           alignment: Alignment.centerLeft,
           decoration: BoxDecoration(
@@ -117,7 +118,7 @@ class _LoginScreenOnState extends State<LoginScreenOn> {
             ]
           ),
           height: 60,
-          child:  TextField(
+          child:  const TextField(
             keyboardType: TextInputType.emailAddress,
             style: TextStyle(
               color: Colors.black54
@@ -143,7 +144,7 @@ class _LoginScreenOnState extends State<LoginScreenOn> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const Text('Password', style: TextStyle(color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold),
+        const Text('Password', style: TextStyle(color: Colors.blueAccent, fontSize: 30, fontWeight: FontWeight.bold),
         ),
         const SizedBox(height: 10),
         Container(
@@ -182,11 +183,32 @@ class _LoginScreenOnState extends State<LoginScreenOn> {
       ],
     );
   }
-
-  forgotPassword() {
+  Widget forgotPassword() {
     return(
       Container(
         alignment: Alignment.centerRight,
+        child: TextButton(
+          onPressed: () {},
+          child: const Text('Forgot your Password?',
+          style: TextStyle(
+            color: Colors.blueAccent,
+            fontWeight: FontWeight.bold,
+            fontSize: 20
+          ),
+          ),
+
+        ),
+      )
+    );
+  }
+  Widget logInButton(){
+    return(
+      Container(
+        padding: EdgeInsets.symmetric(vertical: 25),
+        width: double.infinity,
+        child: ElevatedButton(
+          onPressed: (){}, child: Text('Log In', style: TextStyle(fontSize: 29),),
+        ),
       )
     );
   }
