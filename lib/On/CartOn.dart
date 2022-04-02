@@ -2,12 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:king_oopers_app/On/CardsCartOn.dart';
-import 'package:king_oopers_app/On/CartOn.dart';
-import 'package:king_oopers_app/On/DepartmentsOn.dart';
 import 'package:king_oopers_app/On/HomeOn.dart';
-import 'package:king_oopers_app/On/NavigationBarOn.dart';
-import '../Off/CardsWidgetOff.dart';
-import 'CardsWidgetOn.dart';
 
 class CartOn extends StatefulWidget {
 

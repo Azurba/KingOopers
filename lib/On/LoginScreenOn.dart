@@ -4,8 +4,6 @@ import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
-
-import 'CartOn.dart';
 import 'HomeOn.dart';
 
 class LoginScreenOn extends StatefulWidget {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:king_oopers_app/On/CartOn.dart';
 import 'package:king_oopers_app/On/DepartmentsOn.dart';
 import 'package:king_oopers_app/On/FindUsOn.dart';
 
