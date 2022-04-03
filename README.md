@@ -7,7 +7,7 @@
 | Pimenta Giudice | Joao | joaop | Azurba | joaop@colostate.edu |
 
 
-# Development Breakdown
+# Development Progress
 
 Overall: App is 44% completed
 
