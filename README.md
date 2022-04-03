@@ -9,7 +9,7 @@
 
 # Development Progress
 
-Overall: App is 44% completed
+Overall: App is 60% completed
 
 Last Updated: 02/04/2022
 
