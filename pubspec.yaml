@@ -85,6 +85,13 @@ flutter:
     - assets/images/LacotoseFree.PNG
     - assets/images/chickenDrums.PNG
     - assets/images/frostedFlakes.PNG
+    - assets/images/chickenDrums.PNG
+    - assets/images/groundBeef.PNG
+    - assets/images/NYSteak.PNG
+    - assets/images/peperoni.PNG
+    - assets/images/salmon.PNG
+    - assets/images/shrimp.PNG
+    - assets/images/turkey.PNG
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
