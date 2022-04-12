@@ -52,6 +52,7 @@ class DepartmentOn extends StatelessWidget {
               style: TextStyle(fontSize: 39.0, color: Colors.white),
             ),
             onPressed: () {
+              //Get.to(Home());
               /*
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => navigateTo));*/
@@ -87,7 +88,7 @@ class DepartmentOn extends StatelessWidget {
                     _HomeButtons("Meats", MeatStateOn()),
                     _HomeButtons("Cereals", CerealsStateOn()),
                     _HomeButtons("Fruits", FruitsStateOn()),
-                    _HomeButtons("Contact us", null),
+                    //_HomeButtons("Contact us", null),
                     _HomeButtons("Account", const LoginScreenOn()),
                     _ExitButton()
                   ],

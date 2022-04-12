@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:king_oopers_app/Off/Dairy.dart';
+import 'package:king_oopers_app/Off/MeatsOff.dart';
+
+import '../main.dart';
 
 class DepartmentOff extends StatelessWidget {
   const DepartmentOff({Key? key}) : super(key: key);
@@ -33,6 +36,28 @@ class DepartmentOff extends StatelessWidget {
             style: ElevatedButton.styleFrom(primary: Colors.orange)),
       );
 
+    Widget _ExitButton() => Padding(
+      padding: const EdgeInsets.fromLTRB(1, 0, 1, 1),
+      child: SizedBox(
+        width: 110,
+        child: ElevatedButton(
+            child: const Text(
+              "Exit",
+              style: TextStyle(fontSize: 19.0, color: Colors.black54),
+            ),
+            onPressed: () {
+              /*
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => navigateTo));*/
+            },
+            onLongPress: () {
+              Get.to(const Home());
+
+            } ,
+            style: ElevatedButton.styleFrom(primary: Colors.red)),
+      ),
+    );
+
     return Stack(
       children: [
         _background(),
@@ -54,10 +79,12 @@ class DepartmentOff extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     _HomeButtons("Dairy", DairyState()),
-                    _HomeButtons("Meats", null),
+                    _HomeButtons("Meats", MeatStateOff()),
                     _HomeButtons("Cereals", null),
                     _HomeButtons("Fruits", null),
-                    _HomeButtons("Contact us", null),
+                    _HomeButtons("Account", null),
+                    _ExitButton()
+
                   ],
                 ))
           ],
