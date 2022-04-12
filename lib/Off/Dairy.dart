@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:king_oopers_app/Off/NavigationBarOff.dart';
 
+import '../On/CartOn.dart';
 import './CardsWidgetOff.dart';
 
 class DairyState extends StatefulWidget {
@@ -27,6 +28,17 @@ class _Dairy extends State<DairyState> {
         title: const Text("Dairy", style: TextStyle(color: Colors.black45),),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
+        actions: [
+          Padding(padding: const EdgeInsets.fromLTRB(0, 0, 0, 0),
+            child:
+            IconButton(
+              icon: const Icon(Icons.shopping_cart, size: 23, color: Colors.black54,),
+              onPressed: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => CartOn()));
+              },
+            ),
+          ),
+        ],
       ),
       backgroundColor: Colors.white,
       body: ListView(

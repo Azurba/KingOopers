@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:king_oopers_app/Off/CerealsOff.dart';
 import 'package:king_oopers_app/Off/Dairy.dart';
+import 'package:king_oopers_app/Off/FruitsOff.dart';
 import 'package:king_oopers_app/Off/MeatsOff.dart';
 
 import '../main.dart';
@@ -80,8 +82,8 @@ class DepartmentOff extends StatelessWidget {
                   children: [
                     _HomeButtons("Dairy", DairyState()),
                     _HomeButtons("Meats", MeatStateOff()),
-                    _HomeButtons("Cereals", null),
-                    _HomeButtons("Fruits", null),
+                    _HomeButtons("Cereals", CerealsStateOff()),
+                    _HomeButtons("Fruits", FruitsStateOff()),
                     _HomeButtons("Account", null),
                     _ExitButton()
 
