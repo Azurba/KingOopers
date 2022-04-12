@@ -11,7 +11,7 @@
 
 Overall: App is 85% completed
 
-Last Updated: 02/04/2022
+Last Updated: 02/12/2022
 
 | Pages  | Accesibility Off Group  | Accesibility On Group |
 | ------------- | ------------- | ------------- |
