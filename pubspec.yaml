@@ -92,6 +92,11 @@ flutter:
     - assets/images/salmon.PNG
     - assets/images/shrimp.PNG
     - assets/images/turkey.PNG
+    - assets/images/frostedFlakes.PNG
+    - assets/images/cheerios.jpg
+    - assets/images/pops.jpg
+    - assets/images/raisinBran.jpeg
+    - assets/images/frootLoops.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
