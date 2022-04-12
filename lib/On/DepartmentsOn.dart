@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:king_oopers_app/On/CerealsOn.dart';
+import 'package:king_oopers_app/On/FruitsOn.dart';
 import 'package:king_oopers_app/On/LoginScreenOn.dart';
 import 'package:king_oopers_app/On/MeatOn.dart';
 import 'package:king_oopers_app/main.dart';
@@ -85,7 +86,7 @@ class DepartmentOn extends StatelessWidget {
                     _HomeButtons("Dairy", DairyStateOn()),
                     _HomeButtons("Meats", MeatStateOn()),
                     _HomeButtons("Cereals", CerealsStateOn()),
-                    _HomeButtons("Fruits", null),
+                    _HomeButtons("Fruits", FruitsStateOn()),
                     _HomeButtons("Contact us", null),
                     _HomeButtons("Account", const LoginScreenOn()),
                     _ExitButton()

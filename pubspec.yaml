@@ -97,6 +97,13 @@ flutter:
     - assets/images/pops.jpg
     - assets/images/raisinBran.jpeg
     - assets/images/frootLoops.jpg
+    - assets/images/apple.jpg
+    - assets/images/banana.jpg
+    - assets/images/grapes.png
+    - assets/images/waterMelon.png
+    - assets/images/strawberry.png
+    - assets/images/orange.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
