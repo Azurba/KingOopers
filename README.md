@@ -18,11 +18,11 @@ Last Updated: 02/04/2022
 | Menu  | 90% completed | 100% completed |
 | Dairy  | 90% completed  | 100% completed |
 | Meat  | 90% completed | 100% completed |
-| Cereals | 0% completed  | 100% completed |
-| Fruits  | 0% completed  | 100% completed |
-| Account  | 0% completed | 100% completed |
+| Cereals | 90% completed  | 100% completed |
+| Fruits  | 90% completed  | 100% completed |
+| Account  | 90% completed | 100% completed |
 | Find Us  | 100% completed  | 100% completed |
-| Cart  | 0% completed  | 90% completed |
+| Cart  | 90% completed  | 90% completed |
 
 
 
