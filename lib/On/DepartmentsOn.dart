@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:king_oopers_app/On/LoginScreenOn.dart';
+import 'package:king_oopers_app/On/MeatOn.dart';
 import 'package:king_oopers_app/main.dart';
 
 import 'DairyOn.dart';
@@ -81,7 +82,7 @@ class DepartmentOn extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     _HomeButtons("Dairy", DairyStateOn()),
-                    _HomeButtons("Meats", null),
+                    _HomeButtons("Meats", MeatStateOn()),
                     _HomeButtons("Cereals", null),
                     _HomeButtons("Fruits", null),
                     _HomeButtons("Contact us", null),
