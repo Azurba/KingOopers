@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:king_oopers_app/Off/CerealsOff.dart';
 import 'package:king_oopers_app/Off/Dairy.dart';
 import 'package:king_oopers_app/Off/FruitsOff.dart';
+import 'package:king_oopers_app/Off/LoginScreenOff.dart';
 import 'package:king_oopers_app/Off/MeatsOff.dart';
 
 import '../main.dart';
@@ -45,7 +46,7 @@ class DepartmentOff extends StatelessWidget {
         child: ElevatedButton(
             child: const Text(
               "Exit",
-              style: TextStyle(fontSize: 19.0, color: Colors.black54),
+              style: TextStyle(fontSize: 15.0, color: Colors.black54),
             ),
             onPressed: () {
               /*
@@ -56,7 +57,7 @@ class DepartmentOff extends StatelessWidget {
               Get.to(const Home());
 
             } ,
-            style: ElevatedButton.styleFrom(primary: Colors.red)),
+            style: ElevatedButton.styleFrom(primary: Colors.orange)),
       ),
     );
 
@@ -66,7 +67,7 @@ class DepartmentOff extends StatelessWidget {
         Column(
           children: [
             Padding(
-              padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+              padding: const EdgeInsets.fromLTRB(0, 70, 0, 0),
               child: Container(
                   height: MediaQuery.of(context).size.height / 10,
                   width: MediaQuery.of(context).size.width,
@@ -84,7 +85,7 @@ class DepartmentOff extends StatelessWidget {
                     _HomeButtons("Meats", MeatStateOff()),
                     _HomeButtons("Cereals", CerealsStateOff()),
                     _HomeButtons("Fruits", FruitsStateOff()),
-                    _HomeButtons("Account", null),
+                    _HomeButtons("Account", LoginScreenOff()),
                     _ExitButton()
 
                   ],

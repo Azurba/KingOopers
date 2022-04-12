@@ -19,7 +19,6 @@ class _HomeOffState extends State<HomeOff> {
 
     final List<Widget>screens = [
       const DepartmentOff(),
-      CartOn(),
       const FindUs(),
     ];
 
@@ -30,6 +29,7 @@ class _HomeOffState extends State<HomeOff> {
     }
 
     return Scaffold(
+      /*
         appBar: AppBar(
           leading: Builder(
             builder: (BuildContext context) {
@@ -50,6 +50,8 @@ class _HomeOffState extends State<HomeOff> {
           centerTitle: true,
           backgroundColor: Colors.white,
         ),
+
+       */
         body: screens[_currentIndex],
         bottomNavigationBar: BottomNavigationBar(
             onTap: onTapFunction,
@@ -65,6 +67,7 @@ class _HomeOffState extends State<HomeOff> {
                   ),
                   label: "",
                   backgroundColor: Colors.black54),
+              /*
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.shopping_cart,
@@ -72,6 +75,8 @@ class _HomeOffState extends State<HomeOff> {
                   ),
                   label: "",
                   backgroundColor: Colors.black54),
+
+               */
               BottomNavigationBarItem(
                   icon: Icon(
                     Icons.location_on,

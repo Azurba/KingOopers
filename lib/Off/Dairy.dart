@@ -15,7 +15,6 @@ class _Dairy extends State<DairyState> {
 
   @override
   Widget build(BuildContext context) {
-    const _cartHeight = 100.0;
     return Scaffold(
       appBar: AppBar(
         leading: Builder(builder: (BuildContext context) {
