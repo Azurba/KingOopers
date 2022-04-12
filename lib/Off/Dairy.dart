@@ -32,13 +32,13 @@ class _Dairy extends State<DairyState> {
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          CardsWidgeOff('assets/images/milk.png', 'Borden - 2% milk'),
-          CardsWidgeOff('assets/images/LacotoseFree.PNG', 'Fa!rlife - Lactose Free Milk'),
-          CardsWidgeOff('assets/images/chedarCheese.PNG', 'Kroger - Mild Cheddar Cheese - Block'),
-          CardsWidgeOff('assets/images/ProvoloneCheese.PNG', 'Sargento - Provolone Cheese - Slices'),
-          CardsWidgeOff('assets/images/sourCream.PNG', 'Daisy - Sour Cream'),
-          CardsWidgeOff('assets/images/blueYogurt.PNG', 'Chobani - Greek Yogurt - Blueberry'),
-          CardsWidgeOff('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
+          CardsWidgetOff('assets/images/milk.png', 'Borden - 2% milk'),
+          CardsWidgetOff('assets/images/LacotoseFree.PNG', 'Fa!rlife - Lactose Free Milk'),
+          CardsWidgetOff('assets/images/chedarCheese.PNG', 'Kroger - Mild Cheddar Cheese - Block'),
+          CardsWidgetOff('assets/images/ProvoloneCheese.PNG', 'Sargento - Provolone Cheese - Slices'),
+          CardsWidgetOff('assets/images/sourCream.PNG', 'Daisy - Sour Cream'),
+          CardsWidgetOff('assets/images/blueYogurt.PNG', 'Chobani - Greek Yogurt - Blueberry'),
+          CardsWidgetOff('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
         ],
       ),
         bottomNavigationBar: bottomNavigationOff()

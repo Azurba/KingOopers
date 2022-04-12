@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
-class CardsWidgeOff extends StatefulWidget {
+class CardsWidgetOff extends StatefulWidget {
   String cardText = '';
   String imageSource = '';
-  CardsWidgeOff(this.imageSource, this.cardText);
+  CardsWidgetOff(this.imageSource, this.cardText);
 
   @override
-  State<CardsWidgeOff> createState() => _CardsWidgeOnState();
+  State<CardsWidgetOff> createState() => _CardsWidgetOnState();
 }
 
-class _CardsWidgeOnState extends State<CardsWidgeOff> {
+class _CardsWidgetOnState extends State<CardsWidgetOff> {
   int _quantity = 1;
   String imageSource = '';
   String cardText = '';
