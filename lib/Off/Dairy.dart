@@ -53,7 +53,6 @@ class _Dairy extends State<DairyState> {
           CardsWidgetOff('assets/images/strawYogurt.PNG', 'Chobani - Greek Yogurt - Strawberry'),
         ],
       ),
-        bottomNavigationBar: bottomNavigationOff()
         /*
         BottomNavigationBar(
             items: const [

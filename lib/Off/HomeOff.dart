@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:king_oopers_app/Off/DepartmentsOff.dart';
+import 'package:king_oopers_app/Off/FindUsOff.dart';
 import 'package:king_oopers_app/On/CartOn.dart';
 import 'package:king_oopers_app/On/DepartmentsOn.dart';
 import 'package:king_oopers_app/On/FindUsOn.dart';
@@ -19,7 +20,7 @@ class _HomeOffState extends State<HomeOff> {
 
     final List<Widget>screens = [
       const DepartmentOff(),
-      const FindUs(),
+      const FindUsOff(),
     ];
 
     void onTapFunction(index) {

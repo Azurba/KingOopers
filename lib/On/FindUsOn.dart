@@ -30,30 +30,11 @@ class _FindUsState extends State<FindUs> {
     );
   }
 
-  void showToast(String text) => Fluttertoast.showToast(
-    msg: text,
-    fontSize: 30,
-    gravity: ToastGravity.TOP,
-    backgroundColor: Colors.red,
-  );
-
-  Widget checkoutButton() => Padding(
-      padding: const EdgeInsets.fromLTRB(5, 10, 5, 40),
-      child: Container(
-        padding: const EdgeInsets.all(3),
-        decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(5), color: Colors.blueAccent),
-        child: Row(
-          children: [
-            InkWell(
-                onTap: () {
-                  showToast('Checkout successfully');
-                },
-                child: const Text(
-                  'Proceed to Checkout', style:
-                TextStyle(fontSize: 35, color: Colors.white),
-                )),
-          ],
-        ),
-      ));
-  }
+  void showToast(String text) =>
+      Fluttertoast.showToast(
+        msg: text,
+        fontSize: 30,
+        gravity: ToastGravity.TOP,
+        backgroundColor: Colors.red,
+      );
+}

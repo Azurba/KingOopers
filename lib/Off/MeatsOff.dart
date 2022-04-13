@@ -53,7 +53,6 @@ class _MeatOff extends State<MeatStateOff> {
             CardsWidgetOff('assets/images/turkey.PNG', 'Roasted Turkey Breast'),
           ],
         ),
-        bottomNavigationBar: bottomNavigationOff()
       /*
         BottomNavigationBar(
             items: const [

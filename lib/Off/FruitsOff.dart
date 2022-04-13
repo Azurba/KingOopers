@@ -52,7 +52,6 @@ class _FruitsOff extends State<FruitsStateOff> {
             CardsWidgetOff('assets/images/orange.jpg', 'Orange'),
           ],
         ),
-        bottomNavigationBar: bottomNavigationOff()
       /*
         BottomNavigationBar(
             items: const [

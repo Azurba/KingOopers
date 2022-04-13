@@ -51,7 +51,6 @@ class _CerealsOff extends State<CerealsStateOff> {
             CardsWidgetOff('assets/images/frootLoops.jpg', 'Froot Loops'),
           ],
         ),
-        bottomNavigationBar: bottomNavigationOff()
       /*
         BottomNavigationBar(
             items: const [
