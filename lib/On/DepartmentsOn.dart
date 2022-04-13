@@ -33,10 +33,9 @@ class DepartmentOn extends StatelessWidget {
               style: const TextStyle(fontSize: 39.0, color: Colors.white),
             ),
             onPressed: () {
-              Get.to(navigateTo);
-              /*
+              //Get.to(navigateTo);
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => navigateTo));*/
+                      MaterialPageRoute(builder: (context) => navigateTo));
             },
             style: ElevatedButton.styleFrom(primary: Colors.blue)),
       ),
@@ -52,14 +51,11 @@ class DepartmentOn extends StatelessWidget {
               style: TextStyle(fontSize: 39.0, color: Colors.white),
             ),
             onPressed: () {
-              //Get.to(Home());
+              Get.to(Home());
               /*
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => navigateTo));*/
             },
-            onLongPress: () {
-              Get.to(const Home());
-            } ,
             style: ElevatedButton.styleFrom(primary: Colors.red)),
       ),
     );

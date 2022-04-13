@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:king_oopers_app/Off/CartOff.dart';
 import 'package:king_oopers_app/Off/NavigationBarOff.dart';
 
 import '../On/CartOn.dart';
@@ -33,7 +34,7 @@ class _FruitsOff extends State<FruitsStateOff> {
               IconButton(
                 icon: const Icon(Icons.shopping_cart, size: 23, color: Colors.black54,),
                 onPressed: () {
-                  Navigator.push(context, MaterialPageRoute(builder: (context) => CartOn()));
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => CartOff()));
                 },
               ),
             ),

@@ -27,7 +27,7 @@ class _FruitsOn extends State<FruitsStateOn> {
               ),
             );
         }),
-        title: const Text("Dairy", style: TextStyle(fontSize: 35),),
+        title: const Text("Fruits", style: TextStyle(fontSize: 35),),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
         actions: [

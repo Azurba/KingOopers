@@ -27,7 +27,7 @@ class _CerealsOn extends State<CerealsStateOn> {
               ),
             );
         }),
-        title: const Text("Dairy", style: TextStyle(fontSize: 35),),
+        title: const Text("Cereals", style: TextStyle(fontSize: 35),),
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
         actions: [

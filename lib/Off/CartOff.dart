@@ -23,7 +23,8 @@ class _CartOff extends State<CartOff> {
               IconButton(
                 icon: const Icon(Icons.arrow_back),
                 onPressed: () {
-                  Get.to(const HomeOn());
+                  Navigator.pop(context);
+                  //Get.to(const HomeOn());
                 },
               ),
             );

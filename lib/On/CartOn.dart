@@ -22,7 +22,8 @@ class _CartOne extends State<CartOn> {
               IconButton(
                 icon: const Icon(Icons.arrow_back, size: 40),
                 onPressed: () {
-                  Get.to(const HomeOn());
+                  Navigator.pop(context);
+                  //Get.to(const HomeOn());
                 },
               ),
             );
