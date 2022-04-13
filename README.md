@@ -9,20 +9,20 @@
 
 # Development Progress
 
-Overall: App is 85% completed
+Overall: App is 100% completed
 
 Last Updated: 02/12/2022
 
 | Pages  | Accesibility Off Group  | Accesibility On Group |
 | ------------- | ------------- | ------------- |
-| Menu  | 90% completed | 100% completed |
-| Dairy  | 90% completed  | 100% completed |
-| Meat  | 90% completed | 100% completed |
-| Cereals | 90% completed  | 100% completed |
-| Fruits  | 90% completed  | 100% completed |
-| Account  | 90% completed | 100% completed |
+| Menu  | 100% completed | 100% completed |
+| Dairy  | 100% completed  | 100% completed |
+| Meat  | 100% completed | 100% completed |
+| Cereals | 100% completed  | 100% completed |
+| Fruits  | 100% completed  | 100% completed |
+| Account  | 100% completed | 100% completed |
 | Find Us  | 100% completed  | 100% completed |
-| Cart  | 90% completed  | 90% completed |
+| Cart  | 100% completed  | 100% completed |
 
 
 
