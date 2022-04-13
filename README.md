@@ -11,7 +11,7 @@
 
 Overall: App is 100% completed
 
-Last Updated: 02/12/2022
+Last Updated: 02/13/2022
 
 | Pages  | Accesibility Off Group  | Accesibility On Group |
 | ------------- | ------------- | ------------- |
@@ -24,7 +24,8 @@ Last Updated: 02/12/2022
 | Find Us  | 100% completed  | 100% completed |
 | Cart  | 100% completed  | 100% completed |
 
-
+# Design Differences between the two groups
+![designDiff](https://user-images.githubusercontent.com/58566178/163286972-10b749d8-d8d6-41f8-b029-306dcd9a5d1f.PNG)
 
 
 # Video (Version of 04/04/2022)
