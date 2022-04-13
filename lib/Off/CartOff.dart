@@ -33,14 +33,18 @@ class _CartOff extends State<CartOff> {
         centerTitle: true,
         backgroundColor: Colors.blueAccent,
       ),
-      backgroundColor: Colors.yellowAccent,
+      backgroundColor: Colors.white,
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
-          CardsCartOff('assets/images/blueYogurt.PNG', 'Chobani - Blueberry'),
-          CardsCartOff('assets/images/chickenDrums.PNG', 'Tyson - Chicken Thigh'),
-          CardsCartOff('assets/images/LacotoseFree.PNG', 'Fa!irlife - Zero Lactose'),
-          CardsCartOff('assets/images/frostedFlakes.PNG', 'Frosted Flakes Cereal'),
+          CardsCartOff('assets/images/banana.jpg', '2 Bananas - \$0.46'),
+          CardsCartOff('assets/images/apple.jpg', '1 Apple - \$0.80'),
+          CardsCartOff('assets/images/turkey.PNG', '1 Turkey - \$4.00'),
+          CardsCartOff('assets/images/peperoni.PNG', '5 Pepperoni - \$20.95'),
+          CardsCartOff('assets/images/pops.jpg', 'Corn Pops - \$4.79'),
+          CardsCartOff('assets/images/LacotoseFree.PNG', 'Corn Pops - \$4.79'),
+          CardsCartOff('assets/images/strawYogurt.PNG', 'Corn Pops - \$1.33'),
+          Text('Total: \$16.17', style: TextStyle(fontSize: 20),),
           checkoutButton()
         ],
       ),
