@@ -2,9 +2,9 @@
 
 # Member information
 
-| Last Name |First Name | CSU eID | GitHub username | CSU email |
-| --- | --- | --- | --- | --- |
-| Pimenta Giudice | Joao | joaop | Azurba | joaop@colostate.edu |
+| Last Name |First Name | CSU eID | CSU email |
+| --- | --- | --- | --- |
+| Pimenta Giudice | Joao | joaop | joaop@colostate.edu |
 
 
 # Development Progress
@@ -35,7 +35,7 @@ https://user-images.githubusercontent.com/58566178/161406285-32a754e5-3e63-4fb8-
 
 
 
-# Photos (Version of 04/04/2022)
+# Photos (Version of 04/13/2022)
 
 ## Group Selection Page
 ![Screenshot_20220329-144528](https://user-images.githubusercontent.com/58566178/161406334-fcc5334e-a66a-4810-b9ac-47366ef33389.png)
