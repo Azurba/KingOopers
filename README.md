@@ -53,37 +53,32 @@ https://user-images.githubusercontent.com/58566178/161406285-32a754e5-3e63-4fb8-
 ## Meat Page
 | Accesibility Off Group  | Accesibility On Group |
 | ------------- | ------------- |
-| 0% completed | 0% completed |
+| ![Screenshot_20220413-171248](https://user-images.githubusercontent.com/58566178/163285624-98a08365-ee86-414d-9975-8e7128631f64.png) | ![Screenshot_20220413-171259](https://user-images.githubusercontent.com/58566178/163285639-f609bbb8-c6a0-4424-b1f1-d4974c350c9a.png) |
 
 ## Cereals Page
 | Accesibility Off Group  | Accesibility On Group |
 | ------------- | ------------- |
-| 0% completed  | 0% completed |
+|![Screenshot_20220413-171322](https://user-images.githubusercontent.com/58566178/163285708-b085bd59-7ba9-439d-bdf2-f37bc058e6ec.png)| ![Screenshot_20220413-171308](https://user-images.githubusercontent.com/58566178/163285718-3962f559-d381-4197-ba88-6dbe4aa8b5f0.png)|
 
 ## Fruits Page
 | Accesibility Off Group  | Accesibility On Group |
 | ------------- | ------------- |
-| 0% completed  | 0% completed |
-
-## Contact Us Page
-| Accesibility Off Group  | Accesibility On Group |
-| ------------- | ------------- |
-| 0% completed  | 0% completed |
+|![Screenshot_20220413-171328](https://user-images.githubusercontent.com/58566178/163285739-0e0c6204-e8f4-4a02-a187-fb275945ad4a.png)|![Screenshot_20220413-171336](https://user-images.githubusercontent.com/58566178/163285755-124d5e64-61ac-42b2-9984-c95707618665.png)|
 
 ## Account Page
 | Accesibility Off Group  | Accesibility On Group |
 | ------------- | ------------- |
-| 0% completed | ![Screenshot_20220402-184313](https://user-images.githubusercontent.com/58566178/161406857-61cde33b-d57d-463a-bf8e-cb49d2de54e7.png)|
+|![Screenshot_20220413-171351](https://user-images.githubusercontent.com/58566178/163285841-6bcfc7a5-a505-457e-ae40-175250a72250.png)|![Screenshot_20220413-172817](https://user-images.githubusercontent.com/58566178/163286631-a70afcf9-1e54-4374-ba81-07e462eeaf01.png)|
 
 ## Find Us Page
 | Accesibility Off Group  | Accesibility On Group |
 | ------------- | ------------- |
-| 0% completed  | ![Screenshot_20220402-184215](https://user-images.githubusercontent.com/58566178/161406845-603a421e-e26b-48cb-a083-a8a6fa5b377f.png)|
+|![Screenshot_20220413-172731](https://user-images.githubusercontent.com/58566178/163286373-cc9b62f6-39a6-4466-8f90-c77a2a701452.png)|![Screenshot_20220413-172722](https://user-images.githubusercontent.com/58566178/163286589-e9f1a3d1-72cb-4766-90a0-239415700290.png)|
 
 ## Cart Page
 | Accesibility Off Group  | Accesibility On Group |
 | ------------- | ------------- |
-|0% completed  | ![Screenshot_20220402-184246](https://user-images.githubusercontent.com/58566178/161406862-e11c7939-2c01-4faa-aa5d-08da1e126164.png)|
+|![Screenshot_20220413-171403](https://user-images.githubusercontent.com/58566178/163286558-b6e7de7a-098f-4d27-b8ad-f7e692d1e4ff.png)|![Screenshot_20220413-171415](https://user-images.githubusercontent.com/58566178/163286546-6c33af5e-6d52-4a9c-b9c8-20faa9683d3a.png)|
 
 
 
