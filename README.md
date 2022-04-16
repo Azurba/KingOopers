@@ -17,6 +17,30 @@ Step 2: Extract all the files to the desired location
 Step 3: Once it is extracted, there should be a folder (the only one) called "Release". Inside this folder, double click in the executable file "King Oopers - CS464 Project.exe". The application should run.
 
 ## Method 2
+Step 1: Download the Flutter framework: [Click Here](https://docs.flutter.dev/get-started/install)
+- Extract the downloaded directory
+- Go to the C:\ and create a ''src'' folder
+- Move the ''Flutter'' folder to the src
+
+Step 2: Download Android Studio: [Click Here](https://developer.android.com/studio)
+
+Step3: 
+- Go to the Environment Variables (type ''env'' on the windows search bar)
+- Click on Path, then edit
+- Copy and paste "C:\src\flutter\bin"
+- Save it
+- Go to the command prompt and type: "flutter doctor". If it runs, go to the next step. If not, review the items above.
+
+Step 4:
+- Install and open Android Studio
+- Click on "Configure" and then "Plugins"
+- Search for "Dart" and "Flutter" and install it
+
+Step 5: Restart your computer
+
+Step 6: Open Android Studio and open the application
+- Run the application by choosing the run method: Web, Virtual Device (Emulator), or by connecting your phone (Android Studio should recognize your phone once you connect it and the Development Mode is on)
+
 
 
 
