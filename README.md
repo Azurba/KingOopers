@@ -11,10 +11,10 @@ The video below shows how to prototype is working. Some features will not be imp
 
 https://youtu.be/dERZTnqLtvY
 
-# Video - Mobile (Version of 04/04/2022)
+# Video - Mobile (Version of 04/13/2022)
 The intial part of the prototype can be seen in the video below
 
-https://user-images.githubusercontent.com/58566178/161406285-32a754e5-3e63-4fb8-ad19-1f95921205c0.mp4
+https://user-images.githubusercontent.com/58566178/163688012-d88982dc-aac2-4c04-ad33-03d8823fed44.mp4
 
 # Running the Aplication
 ## Method 1 - Windows Executable
