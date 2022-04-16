@@ -8,19 +8,27 @@
 
 
 # Running the Aplication
-## Method 1
-In order to make it easier, I created a Windows executable that contains all the file necessary files and release to run the application in any windows environment without the need of an environment that supports the Flutter framework. 
-Step 1: Download the KingOopers.zip file. You can find it here: [Click Here](https://github.com/csu-hci-projects/Accessibility-for-the-elderly-King-Oopers/blob/2153731e36dec4cadfad8e4d19388dc9d00c241a/KingOopers.zip)
+## Method 1 - Windows Executable
+In order to make it easier, an Windows executable was created. It contains all the files and the necessary release to run the application in any Windows environment without the need of an environment that supports the Flutter framework.
 
-Step 2: Extract all the files to the desired location
+Step 1: Download the KingOopers.zip file available in this repository. You can find it here: [Click Here](https://github.com/csu-hci-projects/Accessibility-for-the-elderly-King-Oopers/blob/2153731e36dec4cadfad8e4d19388dc9d00c241a/KingOopers.zip)
 
-Step 3: Once it is extracted, there should be a folder (the only one) called "Release". Inside this folder, double click in the executable file "King Oopers - CS464 Project.exe". The application should run.
+Step 2: Extract all the files to the desired location.
 
-## Method 2
+Step 3: Once it is extracted, there should be a folder (the only one) called "Release". Double click on it. Inside the Release, double click in the executable file "King Oopers - CS464 Project.exe". The application should run.
+
+Important: This application was developed and designed for mobile systems. Opening in a Windows environment may cause some issues.
+
+## Method 2 - Flutter Installation
 Step 1: Download the Flutter framework: [Click Here](https://docs.flutter.dev/get-started/install)
 - Extract the downloaded directory
 - Go to the C:\ and create a ''src'' folder
 - Move the ''Flutter'' folder to the src
+
+![src](https://user-images.githubusercontent.com/58566178/163683159-409d7eaa-fb9f-41b2-854a-77634f8bf445.PNG)
+
+![src2](https://user-images.githubusercontent.com/58566178/163683161-6254b11b-b9d2-4143-bdb0-c3705fcd68f6.PNG)
+
 
 Step 2: Download Android Studio: [Click Here](https://developer.android.com/studio)
 
@@ -31,17 +39,28 @@ Step3:
 - Save it
 - Go to the command prompt and type: "flutter doctor". If it runs, go to the next step. If not, review the items above.
 
+![env](https://user-images.githubusercontent.com/58566178/163683236-f3b94e71-5a0c-4b54-a60f-06f56675e0fb.PNG)
+![env2](https://user-images.githubusercontent.com/58566178/163683338-0330ed15-7593-418f-aaef-eff6a3bcfa0a.PNG)
+
+
 Step 4:
 - Install and open Android Studio
 - Click on "Configure" and then "Plugins"
 - Search for "Dart" and "Flutter" and install it
 
+![plugins](https://user-images.githubusercontent.com/58566178/163683087-30ee9cce-85a8-4cd3-9b8d-cffba8aa18cd.PNG)
+
+![plugins2](https://user-images.githubusercontent.com/58566178/163683099-3467905f-0b03-43a1-b313-9ab2b3031ce7.PNG)
+
+
 Step 5: Restart your computer
 
-Step 6: Open Android Studio and open the application
+Step 6: Open Android Studio and open the application project
+- Open the application project
 - Run the application by choosing the run method: Web, Virtual Device (Emulator), or by connecting your phone (Android Studio should recognize your phone once you connect it and the Development Mode is on)
 
-
+![open](https://user-images.githubusercontent.com/58566178/163683569-8fc4db62-a100-4653-a5e2-7534b3d06234.PNG)
+![runApp](https://user-images.githubusercontent.com/58566178/163683041-540fb622-415a-473d-a981-b4f08d784403.PNG)
 
 
 # Development Progress
