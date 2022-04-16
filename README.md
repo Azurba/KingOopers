@@ -11,6 +11,11 @@ The video below shows how to prototype is working. Some features will not be imp
 
 https://youtu.be/dERZTnqLtvY
 
+# Video - Mobile (Version of 04/04/2022)
+The intial part of the prototype can be seen in the video below
+
+https://user-images.githubusercontent.com/58566178/161406285-32a754e5-3e63-4fb8-ad19-1f95921205c0.mp4
+
 # Running the Aplication
 ## Method 1 - Windows Executable
 In order to make it easier, an Windows executable was created. It contains all the files and the necessary release to run the application in any Windows environment without the need of an environment that supports the Flutter framework.
@@ -84,11 +89,6 @@ Last Updated: 02/13/2022
 # Design Differences between the two groups
 ![designDiff](https://user-images.githubusercontent.com/58566178/163286972-10b749d8-d8d6-41f8-b029-306dcd9a5d1f.PNG)
 
-
-# Video (Version of 04/04/2022)
-The intial part of the prototype can be seen in the video below
-
-https://user-images.githubusercontent.com/58566178/161406285-32a754e5-3e63-4fb8-ad19-1f95921205c0.mp4
 
 # Photos (Version of 04/13/2022)
 
