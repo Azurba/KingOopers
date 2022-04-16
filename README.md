@@ -7,6 +7,19 @@
 | Pimenta Giudice | Joao | joaop | joaop@colostate.edu |
 
 
+# Running the Aplication
+## Method 1
+In order to make it easier, I created a Windows executable that contains all the file necessary files and release to run the application in any windows environment without the need of an environment that supports the Flutter framework. 
+Step 1: Download the KingOopers.zip file. You can find it here: [Click Here](https://github.com/csu-hci-projects/Accessibility-for-the-elderly-King-Oopers/blob/2153731e36dec4cadfad8e4d19388dc9d00c241a/KingOopers.zip)
+
+Step 2: Extract all the files to the desired location
+
+Step 3: Once it is extracted, there should be a folder (the only one) called "Release". Inside this folder, double click in the executable file "King Oopers - CS464 Project.exe". The application should run.
+
+## Method 2
+
+
+
 # Development Progress
 
 Overall: App is 100% completed
