@@ -6,6 +6,8 @@
 | --- | --- | --- | --- |
 | Pimenta Giudice | Joao | joaop | joaop@colostate.edu |
 
+# Checkpoint 2 - Youtube Video
+https://youtu.be/dERZTnqLtvY
 
 # Running the Aplication
 ## Method 1 - Windows Executable
