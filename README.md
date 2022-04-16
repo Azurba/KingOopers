@@ -7,6 +7,8 @@
 | Pimenta Giudice | Joao | joaop | joaop@colostate.edu |
 
 # Checkpoint 2 - Youtube Video
+The video below shows how to prototype is working. Some features will not be implemented due to the fact that is not relevant for the research and data collection, such as state update for the cart and the usage of a database to support authentication of accounts and log in (Firebase).
+
 https://youtu.be/dERZTnqLtvY
 
 # Running the Aplication
@@ -52,9 +54,6 @@ Step 4:
 
 ![plugins](https://user-images.githubusercontent.com/58566178/163683087-30ee9cce-85a8-4cd3-9b8d-cffba8aa18cd.PNG)
 
-![plugins2](https://user-images.githubusercontent.com/58566178/163683099-3467905f-0b03-43a1-b313-9ab2b3031ce7.PNG)
-
-
 Step 5: Restart your computer
 
 Step 6: Open Android Studio and open the application project
@@ -90,8 +89,6 @@ Last Updated: 02/13/2022
 The intial part of the prototype can be seen in the video below
 
 https://user-images.githubusercontent.com/58566178/161406285-32a754e5-3e63-4fb8-ad19-1f95921205c0.mp4
-
-
 
 # Photos (Version of 04/13/2022)
 
