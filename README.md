@@ -19,7 +19,7 @@ https://user-images.githubusercontent.com/58566178/163688012-d88982dc-aac2-4c04-
 # Running the Aplication
 
 ## Method 1 - Android Executable
-In order to make it easier, an Android executable was created (apk file - this is the same type of file that developers upload to the Google Play store to make the app available). It contains all the files and the necessary release to run the application in any Android environment. Many cellphones will require additional permission to run this type of file.
+In order to make it easier, an Android executable was created (apk file - this is the same type of file that developers upload to the Google Play Store to make the app available). It contains all the files and the necessary release to run the application in any Android environment. Many cellphones will require additional permission to run this type of file.
 
 Step 1: Download the app-release.apk in your Android phone. You can find it here: [Click Here](https://github.com/csu-hci-projects/Accessibility-for-the-elderly-King-Oopers/blob/e0a1fa8477835aad34a851e5ac3b0f03d9eaf856/build/app/outputs/flutter-apk/app-release.apk)
 
