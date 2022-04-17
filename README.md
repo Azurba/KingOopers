@@ -7,38 +7,40 @@
 | Pimenta Giudice | Joao | joaop | joaop@colostate.edu |
 
 # Checkpoint 2 - Youtube Video
-The video below shows how to prototype is working. Some features will not be implemented due to the fact that is not relevant for the research and data collection, such as state update for the cart and the usage of a database to support authentication of accounts and log in (Firebase).
+The video below shows how the prototype is working. Some features will not be implemented due to the fact that is not relevant for the research and data collection, such as the state update for the cart and the usage of a database to support authentication of accounts and log in (Firebase). The video below will show the prototype in a Web (Chrome) enviroment.
 
 https://youtu.be/dERZTnqLtvY
 
 # Video - Mobile (Version of 04/13/2022)
-The intial part of the prototype can be seen in the video below
+The prototype in a mobile environment can be seen in the video below
 
 https://user-images.githubusercontent.com/58566178/163688012-d88982dc-aac2-4c04-ad33-03d8823fed44.mp4
 
 # Running the Aplication
 
 ## Method 1 - Android Executable
-In order to make it easier, an Android executable was created (apk file - this is the same type of file that developers upload to the Google Play Store to make the app available). It contains all the files and the necessary release to run the application in any Android environment. Many cellphones will require additional permission to run this type of file.
+In order to make it easier, an Android executable was created (apk file - this is the same type of file that developers upload to the Google Play Store to make the app available). Many cellphones will require additional permission to run the file.
 
-Step 1: Download the app-release.apk in your Android phone. You can find it here: [Click Here](https://github.com/csu-hci-projects/Accessibility-for-the-elderly-King-Oopers/blob/e0a1fa8477835aad34a851e5ac3b0f03d9eaf856/build/app/outputs/flutter-apk/app-release.apk)
+Step 1: Download the app-release.apk in your **Android phone**. You can find the file here: [Click Here](https://github.com/csu-hci-projects/Accessibility-for-the-elderly-King-Oopers/blob/e0a1fa8477835aad34a851e5ac3b0f03d9eaf856/build/app/outputs/flutter-apk/app-release.apk)
 
 Step 2: Open the file
 
 Step 3: Install and run the application
 
-## Method 2 - Windows Executable
-In order to make it easier, an Windows executable was created. It contains all the files and the necessary release to run the application in any Windows environment without the need of an environment that supports the Flutter framework.
+**Important: This application was designed for mobile systems with 1080 x 2400 resolution or higher. Running in a smaller resolution may cause some issues such as pixel overflow.**
 
-Step 1: Download the KingOopers.zip file available in this repository. You can find it here: [Click Here](https://github.com/csu-hci-projects/Accessibility-for-the-elderly-King-Oopers/blob/2153731e36dec4cadfad8e4d19388dc9d00c241a/KingOopers.zip)
+## Method 2 - Windows Executable
+In order to make it easier, a Windows executable was created. It contains all the files and the necessary release to run the application in any Windows environment without the need of an environment that supports the Flutter framework.
+
+Step 1: Download the KingOopers.zip file available in this repository in any **Windows environment**. You can find the file here: [Click Here](https://github.com/csu-hci-projects/Accessibility-for-the-elderly-King-Oopers/blob/2153731e36dec4cadfad8e4d19388dc9d00c241a/KingOopers.zip)
 
 Step 2: Extract all the files to the desired location.
 
 Step 3: Once it is extracted, there should be a folder (the only one) called "Release". Double click on it. Inside the Release, double click in the executable file "King Oopers - CS464 Project.exe". The application should run.
 
-Important: This application was developed and designed for mobile systems. Opening in a Windows environment may cause some issues.
+**Important: This application was developed and designed for mobile systems. Running in a Windows environment may cause some issues.**
 
-## Method 3 - Flutter Installation
+## Method 3 - Flutter Installation (Windows)
 Step 1: Download the Flutter framework: [Click Here](https://docs.flutter.dev/get-started/install)
 - Extract the downloaded directory
 - Go to the C:\ and create a ''src'' folder
