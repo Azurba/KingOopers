@@ -6,6 +6,10 @@
 | --- | --- | --- | --- |
 | Pimenta Giudice | Joao | joaop | joaop@colostate.edu |
 
+# Website Link
+
+https://www.cs.colostate.edu/~joaop/#/
+
 # Checkpoint 2 - Youtube Video
 The video below shows how the prototype is working. Some features will not be implemented due to the fact that is not relevant for the research and data collection, such as the state update for the cart and the usage of a database to support authentication of accounts and log in (Firebase). The video below will show the prototype in a Web (Chrome) enviroment.
 
