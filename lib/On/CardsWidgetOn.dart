@@ -15,7 +15,7 @@ class CardsWidgeOn extends StatefulWidget {
 }
 
 class _CardsWidgeOnState extends State<CardsWidgeOn> {
-  int _quantity = 1;
+  int _quantity = 0;
   String imageSource = '';
   String cardText = '';
 

@@ -11,7 +11,7 @@ class CardsWidgetOff extends StatefulWidget {
 }
 
 class _CardsWidgetOnState extends State<CardsWidgetOff> {
-  int _quantity = 1;
+  int _quantity = 0;
   String imageSource = '';
   String cardText = '';
 
