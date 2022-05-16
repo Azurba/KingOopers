@@ -10,11 +10,6 @@
 
 https://www.cs.colostate.edu/~joaop/#/
 
-# Final Video - Youtube Video
-The video below summarizes the whole project, including the hypothesis, the methodology and results.
-
-https://youtu.be/kUrvPILkIp0
-
 # Video - Mobile (Version of 04/13/2022)
 The prototype in a mobile environment can be seen in the video below
 
@@ -83,24 +78,6 @@ Step 6: Open Android Studio and open the application project
 
 ![open](https://user-images.githubusercontent.com/58566178/163683569-8fc4db62-a100-4653-a5e2-7534b3d06234.PNG)
 ![runApp](https://user-images.githubusercontent.com/58566178/163683041-540fb622-415a-473d-a981-b4f08d784403.PNG)
-
-
-# Development Progress
-
-Overall: App is 100% completed
-
-Last Updated: 02/13/2022
-
-| Pages  | Accesibility Off Group  | Accesibility On Group |
-| ------------- | ------------- | ------------- |
-| Menu  | 100% completed | 100% completed |
-| Dairy  | 100% completed  | 100% completed |
-| Meat  | 100% completed | 100% completed |
-| Cereals | 100% completed  | 100% completed |
-| Fruits  | 100% completed  | 100% completed |
-| Account  | 100% completed | 100% completed |
-| Find Us  | 100% completed  | 100% completed |
-| Cart  | 100% completed  | 100% completed |
 
 # Design Differences between the two groups
 ![designDiff](https://user-images.githubusercontent.com/58566178/163286972-10b749d8-d8d6-41f8-b029-306dcd9a5d1f.PNG)
